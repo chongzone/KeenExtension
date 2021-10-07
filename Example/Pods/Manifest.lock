@@ -1,0 +1,16 @@
+PODS:
+  - KeenExtension (1.0.0)
+
+DEPENDENCIES:
+  - KeenExtension (from `../`)
+
+EXTERNAL SOURCES:
+  KeenExtension:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KeenExtension: 75d987684425b83c0321f545df346aa3b892c99b
+
+PODFILE CHECKSUM: 52e11279b5595ea60771a4040c1eba06f1345b3f
+
+COCOAPODS: 1.7.0

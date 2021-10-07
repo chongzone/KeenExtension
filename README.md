@@ -1,29 +1,50 @@
-# KeenExtension
+![KeenExtension](https://raw.githubusercontent.com/chongzone/KeenExtension/master/Resources/KeenExtensionLogo.png)
 
-[![CI Status](https://img.shields.io/travis/chongzone/KeenExtension.svg?style=flat)](https://travis-ci.org/chongzone/KeenExtension)
-[![Version](https://img.shields.io/cocoapods/v/KeenExtension.svg?style=flat)](https://cocoapods.org/pods/KeenExtension)
-[![License](https://img.shields.io/cocoapods/l/KeenExtension.svg?style=flat)](https://cocoapods.org/pods/KeenExtension)
-[![Platform](https://img.shields.io/cocoapods/p/KeenExtension.svg?style=flat)](https://cocoapods.org/pods/KeenExtension)
+![CI Status](https://img.shields.io/travis/chongzone/KeenExtension.svg?style=flat)
+![](https://img.shields.io/badge/swift-5.0%2B-orange.svg?style=flat)
+![](https://img.shields.io/badge/pod-v1.0.0-brightgreen.svg?style=flat)
+![](https://img.shields.io/badge/platform-iOS-orange.svg?style=flat)
+![](https://img.shields.io/badge/license-MIT-blue.svg)
 
-## Example
+## 功能介绍
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+#### `Foundation` 系统库
+- [x] `Array` 添加元素、转化字符串
+- [x] `Dictionary` 索引、转化字符串
+- [x] `Collection` 集合类取值防越界处理 
+- [x] `Bundle` app 名称、版本、标识符等
+- [x] `NSObject` 类名获取、运行时运用等
+- [x] `String` 索引、截取、字符串转换、有效性校验等
+- [x] `UserDefaults`  对系统对象、自定义对象的增删改查等
+- [x] `Date`  年份月份天数周数等具体日期、日期字符串转换等
+- [x] `NSAttributedString` 链式属性、附件插入、富文本设置等
+- [x] `FileManager` 文件路径、文件的读写拷贝移动、文件大小、属性等
 
-## Requirements
+#### `UIKit` 系统库
+- [x] 基本类型转换、视觉适配等
+- [x] `UIDevice` 设备信息、磁盘容量等
+- [x] `UIFont` 字体获取、常见的视觉字体等
+- [x] `UIColor` 色值获取、常见的视觉色值等
+- [x] `CALayer` 链式属性、常见的动画等
+- [x] `UILabel` 链式属性、富文本设置、获取文本大小等 
+- [x] `UIView` 链式属性、形变、阴影圆角、截屏、事件点击、常见的动画等
 
-## Installation
+## 安装方式 
 
-KeenExtension is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### CocoaPods
 
 ```ruby
+platform :ios, '10.0'
+use_frameworks!
+
+target 'TargetName' do
+
 pod 'KeenExtension'
+
+end
 ```
-
-## Author
-
-chongzone, wangchong.sp@fosun.com
+> `Swift` 版本要求 `5.0+`
 
 ## License
 
-KeenExtension is available under the MIT license. See the LICENSE file for more info.
+KeenExtension is available under the MIT license. [See the LICENSE](https://github.com/chongzone/KeenExtension/blob/main/LICENSE) file for more info.

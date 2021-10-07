@@ -1,13 +1,15 @@
+
+
+
 use_frameworks!
 
-platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'KeenExtension_Example' do
   pod 'KeenExtension', :path => '../'
 
   target 'KeenExtension_Tests' do
     inherit! :search_paths
-
-    
   end
+  
 end
