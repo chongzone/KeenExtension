@@ -7,44 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C842798E74D1C14EE39EEB080089B39 /* NSObject+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47108EF34070A9DB08449F4DF76889F3 /* NSObject+Ex.swift */; };
-		1338E3C503FEE36DABB0EEADEA1FC48A /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1611FC57E5DDD4419C3E4C58D17D9B /* UIView+Ex.swift */; };
-		199225CCD249DAB0AD45F975BDC332E8 /* FileManager+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55A12336DDA8DFB8518FDCCCD85858D /* FileManager+Ex.swift */; };
-		23B7D909A71D6CE32014CCFA87103E37 /* UIColor+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C4E6B452545D2520C8871F75862345 /* UIColor+Ex.swift */; };
+		0EECD31C5186F1C33EFF8437CFC62B72 /* UserDefaults+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BAA86682904FA8B158B34E0A322B51 /* UserDefaults+Ex.swift */; };
+		10C8C31764A18DF3836D839FDFE236E3 /* CALayer+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD122570A95DC640AB64BF860C75C3B0 /* CALayer+Ex.swift */; };
+		275ECFA172A426A2AAE092D0EDC64F33 /* NSObject+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05AD44FC70CFD2145221FB76B86E7B5 /* NSObject+Ex.swift */; };
 		2C186DC286E22B439200A67E45B36A15 /* Pods-KeenExtension_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC2BCD6D0AFBDCF7A740194B2D34D31 /* Pods-KeenExtension_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33255553FCEE295CD098E31B06D6D7B4 /* NSAttributedString+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0948CF01749FF88106C998C723A1FCE4 /* NSAttributedString+Ex.swift */; };
+		2C99B4939C839D951E598F133861319C /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C12D2006D9FCF27AB585BFDA0D73C /* String+Ex.swift */; };
+		3350FBC310F09AB74529C5C505CE1E3A /* KeenExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD6A20D4551055D64FC24BF3D326FCC /* KeenExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35AD9CF34FD8760EEECE83F9CB1D69ED /* Pods-KeenExtension_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8976F2E1ACE6F97AF6375A1F295C5D59 /* Pods-KeenExtension_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AEFD23FC26E68A935E60455A7EC81E7 /* UIDevice+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91D242A5EE77E2B99CFD41FF3413328 /* UIDevice+Ex.swift */; };
-		57066770369D4DC607A21DBBC5388877 /* KcPrefixWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64751E4F2744F4C37A7F8EEFF9997E /* KcPrefixWrapper.swift */; };
-		8A641238516CD93183E29140244CADFF /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5F493854D53BECE3D0B16C479754EA /* Date+Ex.swift */; };
-		95880548F6F6C3FC7C98B5DA80E51FAF /* KeenExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85481B1735EA43988CB179134E0566C2 /* KeenExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A784824AB244570C88584C427B728304 /* Basic+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6AB629E5929C6A4BCD284EB487E9BC /* Basic+Ex.swift */; };
+		386DBE9789BE3F5B6E060A7FB7BDB220 /* KcPrefixWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A3962252AE700AA5AE63851F9472C3 /* KcPrefixWrapper.swift */; };
+		4591010534385318FCF3DC03742BED2C /* UIDevice+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BC17A16B4AEC196D0252BD21C8BB00 /* UIDevice+Ex.swift */; };
+		4675123F1C0336C9832304300AA8605E /* UIFont+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0647EC3FAA5EF052AAB5964B2F7B601D /* UIFont+Ex.swift */; };
+		59057C8071D04FE8D841F484E45A6F95 /* UIColor+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB57C68AB5BFF33F3D12C0457E3C10D /* UIColor+Ex.swift */; };
+		5A5E3B71099973A0D19D7283A73B2DFE /* FileManager+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8685A531A5C9D2ACFB5AF3C6C96737 /* FileManager+Ex.swift */; };
+		873CF0E1A13D26F8BAF9389368A3D0A0 /* UILabel+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD00D32E5C8F6DE831A52D389AC677 /* UILabel+Ex.swift */; };
+		99C81D5965363EBD5573FD4DE3A70C9F /* NSAttributedString+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDFBF46F1ADEDA3CC1D6DD2D874B3BA /* NSAttributedString+Ex.swift */; };
+		9CB061596E1371D8F0DF9C65524F0794 /* Array+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5E2D938342320D0A55DA173C302B1 /* Array+Ex.swift */; };
+		9D9E50BB3A52AD27FB0D1330FC3A5D74 /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EB4F29FE03429E0112EDF186F85D39 /* Date+Ex.swift */; };
+		ADD34F84ECCE8DB0656D79E5E36C7956 /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC114ABA8AF38A906C93A6EAF0B092 /* UIView+Ex.swift */; };
 		B27FEAAE736B0243F6160A49AF4E2CD9 /* Pods-KeenExtension_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4EAB9FBE16EE972D2DA5AEBA3F19B4 /* Pods-KeenExtension_Tests-dummy.m */; };
-		B9564EB5D88FE4998E1F0C3DF27650F1 /* Collection+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1E491E2736972751D8E7FB8A2FC1AC /* Collection+Ex.swift */; };
-		D079607AD56FCF84072D94D02F01C2DE /* CALayer+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74346DA0AF6B6A0517CFD162D7D29BC /* CALayer+Ex.swift */; };
-		DAA9A6B21A0F93BF0A662D048189C962 /* Dictionary+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02804D59413C62D1E3469B1A77DB904D /* Dictionary+Ex.swift */; };
-		DCBA2CE723FB23C5EA5211AEF988B444 /* KeenExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E53B3AAE92340C48F180C55290F365DE /* KeenExtension-dummy.m */; };
-		DEC42D913CF3B748E54166B8A02494C4 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD880CBA6F46D031C9185F54707FFE /* String+Ex.swift */; };
-		E0345DE9883508596DF380DB0751DD23 /* UserDefaults+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2826D29E72319AC9F11E1D749B9926ED /* UserDefaults+Ex.swift */; };
+		C5DC7FFABADB49155DC451E31CE16E7B /* Collection+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734B27EE449BD4198F1B15986AF90AAB /* Collection+Ex.swift */; };
+		CE3617F270BCEF40BE80527D81F43830 /* Basic+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD06810E0769FBFDE8B78845C686D1E /* Basic+Ex.swift */; };
+		D6724BA822A03523B51110EC3444E2A1 /* Dictionary+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B139493F536BE7DC4411A03C8826D77C /* Dictionary+Ex.swift */; };
+		D8268E0EF590AB4BA8DA9216934C29DD /* Data+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B91D2B7CD7D790527F5323D48BA16F /* Data+Ex.swift */; };
 		E1B2A75AFA78CB211F2499ADE7ABFB8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E844D699DDAC4AE3C4D24E6FB0EBFE88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		EDD4A3AE1720D4096649EF9946DCE687 /* UIFont+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47627F03BC470DD7671D52F3181D0639 /* UIFont+Ex.swift */; };
-		F1A7797902CC61DE0658421EC2CE92F7 /* UILabel+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E7CAB7668C50775C2F279B99882F11 /* UILabel+Ex.swift */; };
-		F211B590CC6C97390AAA35493961EAFA /* Bundle+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B149A98D337819ADF8FE1A52AEE7D1 /* Bundle+Ex.swift */; };
-		F2A3DEFFD293563FC90867488B0F7B93 /* Array+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F5106411B149BEF702EB530816457F /* Array+Ex.swift */; };
+		F3B31A4C83AB1787F13927ED9DC26754 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		F3ED771AEE4E00275A0FEF2B8BBA0BF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		F6346D6F7DDB0B1BA8CA224F211127DE /* Pods-KeenExtension_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 734A82297E344EAF50C128B91DD59019 /* Pods-KeenExtension_Example-dummy.m */; };
+		F9DE53A2CD110585F8ACA7CDC54AE36F /* KeenExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9959A35ADAC9798BB5BC3C33BEA98B5 /* KeenExtension-dummy.m */; };
+		FE098C704D306A4EC708D77E759ABF3F /* Bundle+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D16B9B24AAC0CFF2E5205EA4F58D2A /* Bundle+Ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6E191AEA1F64C5EF4E3D4BD99BB66889 /* PBXContainerItemProxy */ = {
+		46B59846FF1E027A2A947B4F7EFD774B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4B078034D85AB604EDFC09203E2CE79C;
 			remoteInfo = "Pods-KeenExtension_Example";
 		};
-		C25490A47A7AF86140834D84B5220EEB /* PBXContainerItemProxy */ = {
+		545C1FC667E85C16AB0A276548A39274 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -55,54 +56,55 @@
 
 /* Begin PBXFileReference section */
 		00A537F2DED29B8B97156E03F88D6FBE /* Pods_KeenExtension_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KeenExtension_Tests.framework; path = "Pods-KeenExtension_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		02804D59413C62D1E3469B1A77DB904D /* Dictionary+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ex.swift"; sourceTree = "<group>"; };
-		0948CF01749FF88106C998C723A1FCE4 /* NSAttributedString+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Ex.swift"; sourceTree = "<group>"; };
-		0B6AB629E5929C6A4BCD284EB487E9BC /* Basic+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Basic+Ex.swift"; sourceTree = "<group>"; };
-		17E7CAB7668C50775C2F279B99882F11 /* UILabel+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UILabel+Ex.swift"; sourceTree = "<group>"; };
-		1AD43C3CA691FF88E2EBEA1EC2CA69EA /* KeenExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeenExtension-prefix.pch"; sourceTree = "<group>"; };
-		2826D29E72319AC9F11E1D749B9926ED /* UserDefaults+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ex.swift"; sourceTree = "<group>"; };
-		2D64751E4F2744F4C37A7F8EEFF9997E /* KcPrefixWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KcPrefixWrapper.swift; sourceTree = "<group>"; };
-		2F1611FC57E5DDD4419C3E4C58D17D9B /* UIView+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Ex.swift"; sourceTree = "<group>"; };
+		0647EC3FAA5EF052AAB5964B2F7B601D /* UIFont+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+Ex.swift"; sourceTree = "<group>"; };
+		07BC17A16B4AEC196D0252BD21C8BB00 /* UIDevice+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIDevice+Ex.swift"; sourceTree = "<group>"; };
+		10D16B9B24AAC0CFF2E5205EA4F58D2A /* Bundle+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+Ex.swift"; sourceTree = "<group>"; };
+		12EB4F29FE03429E0112EDF186F85D39 /* Date+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
+		20884F6C567F9CF6624E2D7EAFDE4343 /* KeenExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeenExtension.modulemap; sourceTree = "<group>"; };
+		27A3962252AE700AA5AE63851F9472C3 /* KcPrefixWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KcPrefixWrapper.swift; sourceTree = "<group>"; };
+		31B91D2B7CD7D790527F5323D48BA16F /* Data+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Data+Ex.swift"; sourceTree = "<group>"; };
 		34A7A8DBD25C0C3538F9B031C947E3E7 /* Pods-KeenExtension_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KeenExtension_Tests.modulemap"; sourceTree = "<group>"; };
-		41DD880CBA6F46D031C9185F54707FFE /* String+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
-		45B149A98D337819ADF8FE1A52AEE7D1 /* Bundle+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+Ex.swift"; sourceTree = "<group>"; };
-		47108EF34070A9DB08449F4DF76889F3 /* NSObject+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSObject+Ex.swift"; sourceTree = "<group>"; };
-		47627F03BC470DD7671D52F3181D0639 /* UIFont+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+Ex.swift"; sourceTree = "<group>"; };
-		55A4D2A03BBA17BFA116E8C1EA3F2A0C /* KeenExtension.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KeenExtension.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		39C8BA257C5378E19ED3F1993F075847 /* KeenExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeenExtension.xcconfig; sourceTree = "<group>"; };
+		480C12D2006D9FCF27AB585BFDA0D73C /* String+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
+		5AA5E2D938342320D0A55DA173C302B1 /* Array+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Ex.swift"; sourceTree = "<group>"; };
+		5CD06810E0769FBFDE8B78845C686D1E /* Basic+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Basic+Ex.swift"; sourceTree = "<group>"; };
 		5E4E95A5D002F4DA213314AB76F64911 /* Pods-KeenExtension_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KeenExtension_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		67412E2A82DC10ED184C2938E1212306 /* Pods-KeenExtension_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeenExtension_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6A5F493854D53BECE3D0B16C479754EA /* Date+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
+		67B53A63D6D06890FDA8C8B4D95038CE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		69565D06A1E8BC521EE65F3B518FD42D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6B8685A531A5C9D2ACFB5AF3C6C96737 /* FileManager+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FileManager+Ex.swift"; sourceTree = "<group>"; };
 		6F4EAB9FBE16EE972D2DA5AEBA3F19B4 /* Pods-KeenExtension_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KeenExtension_Tests-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		734A82297E344EAF50C128B91DD59019 /* Pods-KeenExtension_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KeenExtension_Example-dummy.m"; sourceTree = "<group>"; };
+		734B27EE449BD4198F1B15986AF90AAB /* Collection+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Collection+Ex.swift"; sourceTree = "<group>"; };
 		80A944150A510AF187D8E0D955F78293 /* Pods-KeenExtension_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeenExtension_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		812D3611CCC0B141EB3E2E611B234642 /* Pods-KeenExtension_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KeenExtension_Example-frameworks.sh"; sourceTree = "<group>"; };
-		85481B1735EA43988CB179134E0566C2 /* KeenExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeenExtension-umbrella.h"; sourceTree = "<group>"; };
-		895AFC05804B295702F33D3B96772012 /* KeenExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeenExtension.xcconfig; sourceTree = "<group>"; };
 		8976F2E1ACE6F97AF6375A1F295C5D59 /* Pods-KeenExtension_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KeenExtension_Example-umbrella.h"; sourceTree = "<group>"; };
 		8EC3EF79EA4E5DCD9E96E163D19019F6 /* Pods-KeenExtension_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeenExtension_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8FB57C68AB5BFF33F3D12C0457E3C10D /* UIColor+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+Ex.swift"; sourceTree = "<group>"; };
 		8FBD76FC2FBF04ECF82BF05F54DF184C /* Pods-KeenExtension_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeenExtension_Tests-Info.plist"; sourceTree = "<group>"; };
-		97C4E6B452545D2520C8871F75862345 /* UIColor+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+Ex.swift"; sourceTree = "<group>"; };
+		98DADBFDC8EECAC0448649216C8F9062 /* KeenExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeenExtension-prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DC2BCD6D0AFBDCF7A740194B2D34D31 /* Pods-KeenExtension_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KeenExtension_Tests-umbrella.h"; sourceTree = "<group>"; };
 		A84EDAB27A9B820E133A1837BB37C5A0 /* Pods-KeenExtension_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeenExtension_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AC6E73303416595A4F53836E7A0F5222 /* KeenExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeenExtension.framework; path = KeenExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD122570A95DC640AB64BF860C75C3B0 /* CALayer+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CALayer+Ex.swift"; sourceTree = "<group>"; };
 		AF8F6DFF460BFC583A7FED5DE9A50012 /* Pods-KeenExtension_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeenExtension_Example-Info.plist"; sourceTree = "<group>"; };
-		B55A12336DDA8DFB8518FDCCCD85858D /* FileManager+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FileManager+Ex.swift"; sourceTree = "<group>"; };
-		C4F5106411B149BEF702EB530816457F /* Array+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Ex.swift"; sourceTree = "<group>"; };
-		CA664482F4B3E1A66587DEA84FE5A7A8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B139493F536BE7DC4411A03C8826D77C /* Dictionary+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ex.swift"; sourceTree = "<group>"; };
+		B1BAA86682904FA8B158B34E0A322B51 /* UserDefaults+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ex.swift"; sourceTree = "<group>"; };
+		BCDFBF46F1ADEDA3CC1D6DD2D874B3BA /* NSAttributedString+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Ex.swift"; sourceTree = "<group>"; };
+		C9B1C7E6715BDE2D4680F86ADA559447 /* KeenExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeenExtension-Info.plist"; sourceTree = "<group>"; };
 		CB0D03B63380475036CA7BD251CBDA96 /* Pods-KeenExtension_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeenExtension_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CE1E491E2736972751D8E7FB8A2FC1AC /* Collection+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Collection+Ex.swift"; sourceTree = "<group>"; };
+		D0EC114ABA8AF38A906C93A6EAF0B092 /* UIView+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Ex.swift"; sourceTree = "<group>"; };
 		D247B92C2410A92D3907687CC00504B5 /* Pods-KeenExtension_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KeenExtension_Example.modulemap"; sourceTree = "<group>"; };
-		D74346DA0AF6B6A0517CFD162D7D29BC /* CALayer+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CALayer+Ex.swift"; sourceTree = "<group>"; };
-		D8AABBB4B3BB089379FDF9EB8DAFC76F /* KeenExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeenExtension-Info.plist"; sourceTree = "<group>"; };
-		D91D242A5EE77E2B99CFD41FF3413328 /* UIDevice+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIDevice+Ex.swift"; sourceTree = "<group>"; };
-		E53B3AAE92340C48F180C55290F365DE /* KeenExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeenExtension-dummy.m"; sourceTree = "<group>"; };
+		DBD6A20D4551055D64FC24BF3D326FCC /* KeenExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeenExtension-umbrella.h"; sourceTree = "<group>"; };
+		E05AD44FC70CFD2145221FB76B86E7B5 /* NSObject+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSObject+Ex.swift"; sourceTree = "<group>"; };
+		E2DD00D32E5C8F6DE831A52D389AC677 /* UILabel+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UILabel+Ex.swift"; sourceTree = "<group>"; };
 		E5D097998BF52CA78B98774548313483 /* Pods-KeenExtension_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KeenExtension_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E9959A35ADAC9798BB5BC3C33BEA98B5 /* KeenExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeenExtension-dummy.m"; sourceTree = "<group>"; };
 		EB4A2F1612FF89D2EC964BE8E2F09D92 /* Pods-KeenExtension_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeenExtension_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F283FC8B57D570001C9EB571BF757D46 /* KeenExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeenExtension.modulemap; sourceTree = "<group>"; };
-		F70E4A866EEAE7D57078CF69B55D2BEA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		F9C6F1A6C5B988001405E44630C482FB /* Pods_KeenExtension_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KeenExtension_Example.framework; path = "Pods-KeenExtension_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF49C26AAB16ECD2D0D379F481D0869 /* KeenExtension.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KeenExtension.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,11 +116,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1A8712BBAD5D7E76C14A09BA21EF809 /* Frameworks */ = {
+		CC0F818460D3FBD623E1AA89A5C78CE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E844D699DDAC4AE3C4D24E6FB0EBFE88 /* Foundation.framework in Frameworks */,
+				F3B31A4C83AB1787F13927ED9DC26754 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,17 +135,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		43F7CC84A1102129F831A5CBEFD77A56 /* KeenExtension */ = {
+		05076697441282F90E484B0424F9345A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				D308D9DCED1EB2B6EDC93BFCB715F5B7 /* FoundationEx */,
-				929DEFB809E3F91DE69A4AA68FA04C29 /* Pod */,
-				870CFDC3BDE2C61AAA8948C5FC47CE47 /* Support Files */,
-				58FED519BE41EEE4BB5AE0740B675076 /* UIKitEx */,
-				CCFB7EC558EC2605B5D1F6D38DBE427A /* Utils */,
+				27A3962252AE700AA5AE63851F9472C3 /* KcPrefixWrapper.swift */,
 			);
-			name = KeenExtension;
-			path = ../..;
+			name = Utils;
+			path = KeenExtension/Classes/Utils;
+			sourceTree = "<group>";
+		};
+		2E4AF454F5887EF3EA48B774554CE12A /* FoundationEx */ = {
+			isa = PBXGroup;
+			children = (
+				5AA5E2D938342320D0A55DA173C302B1 /* Array+Ex.swift */,
+				10D16B9B24AAC0CFF2E5205EA4F58D2A /* Bundle+Ex.swift */,
+				734B27EE449BD4198F1B15986AF90AAB /* Collection+Ex.swift */,
+				31B91D2B7CD7D790527F5323D48BA16F /* Data+Ex.swift */,
+				12EB4F29FE03429E0112EDF186F85D39 /* Date+Ex.swift */,
+				B139493F536BE7DC4411A03C8826D77C /* Dictionary+Ex.swift */,
+				6B8685A531A5C9D2ACFB5AF3C6C96737 /* FileManager+Ex.swift */,
+				BCDFBF46F1ADEDA3CC1D6DD2D874B3BA /* NSAttributedString+Ex.swift */,
+				E05AD44FC70CFD2145221FB76B86E7B5 /* NSObject+Ex.swift */,
+				480C12D2006D9FCF27AB585BFDA0D73C /* String+Ex.swift */,
+				B1BAA86682904FA8B158B34E0A322B51 /* UserDefaults+Ex.swift */,
+			);
+			name = FoundationEx;
+			path = KeenExtension/Classes/FoundationEx;
+			sourceTree = "<group>";
+		};
+		4B1708AE60B491BD26110B6DE495FFEC /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FDF49C26AAB16ECD2D0D379F481D0869 /* KeenExtension.podspec */,
+				67B53A63D6D06890FDA8C8B4D95038CE /* LICENSE */,
+				69565D06A1E8BC521EE65F3B518FD42D /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -152,21 +179,6 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		58FED519BE41EEE4BB5AE0740B675076 /* UIKitEx */ = {
-			isa = PBXGroup;
-			children = (
-				0B6AB629E5929C6A4BCD284EB487E9BC /* Basic+Ex.swift */,
-				D74346DA0AF6B6A0517CFD162D7D29BC /* CALayer+Ex.swift */,
-				97C4E6B452545D2520C8871F75862345 /* UIColor+Ex.swift */,
-				D91D242A5EE77E2B99CFD41FF3413328 /* UIDevice+Ex.swift */,
-				47627F03BC470DD7671D52F3181D0639 /* UIFont+Ex.swift */,
-				17E7CAB7668C50775C2F279B99882F11 /* UILabel+Ex.swift */,
-				2F1611FC57E5DDD4419C3E4C58D17D9B /* UIView+Ex.swift */,
-			);
-			name = UIKitEx;
-			path = KeenExtension/Classes/UIKitEx;
 			sourceTree = "<group>";
 		};
 		5D120308D46599C773106DEC0FB893F0 /* Targets Support Files */ = {
@@ -178,18 +190,19 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		870CFDC3BDE2C61AAA8948C5FC47CE47 /* Support Files */ = {
+		6D959BF4ECDB4429016B2EDF814E289E /* UIKitEx */ = {
 			isa = PBXGroup;
 			children = (
-				F283FC8B57D570001C9EB571BF757D46 /* KeenExtension.modulemap */,
-				895AFC05804B295702F33D3B96772012 /* KeenExtension.xcconfig */,
-				E53B3AAE92340C48F180C55290F365DE /* KeenExtension-dummy.m */,
-				D8AABBB4B3BB089379FDF9EB8DAFC76F /* KeenExtension-Info.plist */,
-				1AD43C3CA691FF88E2EBEA1EC2CA69EA /* KeenExtension-prefix.pch */,
-				85481B1735EA43988CB179134E0566C2 /* KeenExtension-umbrella.h */,
+				5CD06810E0769FBFDE8B78845C686D1E /* Basic+Ex.swift */,
+				AD122570A95DC640AB64BF860C75C3B0 /* CALayer+Ex.swift */,
+				8FB57C68AB5BFF33F3D12C0457E3C10D /* UIColor+Ex.swift */,
+				07BC17A16B4AEC196D0252BD21C8BB00 /* UIDevice+Ex.swift */,
+				0647EC3FAA5EF052AAB5964B2F7B601D /* UIFont+Ex.swift */,
+				E2DD00D32E5C8F6DE831A52D389AC677 /* UILabel+Ex.swift */,
+				D0EC114ABA8AF38A906C93A6EAF0B092 /* UIView+Ex.swift */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/KeenExtension";
+			name = UIKitEx;
+			path = KeenExtension/Classes/UIKitEx;
 			sourceTree = "<group>";
 		};
 		8D5A616B9557770A29E71697CC1C1B63 /* Pods-KeenExtension_Tests */ = {
@@ -208,20 +221,10 @@
 			path = "Target Support Files/Pods-KeenExtension_Tests";
 			sourceTree = "<group>";
 		};
-		929DEFB809E3F91DE69A4AA68FA04C29 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				55A4D2A03BBA17BFA116E8C1EA3F2A0C /* KeenExtension.podspec */,
-				F70E4A866EEAE7D57078CF69B55D2BEA /* LICENSE */,
-				CA664482F4B3E1A66587DEA84FE5A7A8 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		9D01C65ADD72AD7DE9C06EA4C42EA3EE /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				43F7CC84A1102129F831A5CBEFD77A56 /* KeenExtension */,
+				C1EFA2404D007FA17523DEF81F83BD29 /* KeenExtension */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -253,13 +256,17 @@
 			path = "Target Support Files/Pods-KeenExtension_Example";
 			sourceTree = "<group>";
 		};
-		CCFB7EC558EC2605B5D1F6D38DBE427A /* Utils */ = {
+		C1EFA2404D007FA17523DEF81F83BD29 /* KeenExtension */ = {
 			isa = PBXGroup;
 			children = (
-				2D64751E4F2744F4C37A7F8EEFF9997E /* KcPrefixWrapper.swift */,
+				2E4AF454F5887EF3EA48B774554CE12A /* FoundationEx */,
+				4B1708AE60B491BD26110B6DE495FFEC /* Pod */,
+				DFB842C66998F0484E71208FE5F1549F /* Support Files */,
+				6D959BF4ECDB4429016B2EDF814E289E /* UIKitEx */,
+				05076697441282F90E484B0424F9345A /* Utils */,
 			);
-			name = Utils;
-			path = KeenExtension/Classes/Utils;
+			name = KeenExtension;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -281,22 +288,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D308D9DCED1EB2B6EDC93BFCB715F5B7 /* FoundationEx */ = {
+		DFB842C66998F0484E71208FE5F1549F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C4F5106411B149BEF702EB530816457F /* Array+Ex.swift */,
-				45B149A98D337819ADF8FE1A52AEE7D1 /* Bundle+Ex.swift */,
-				CE1E491E2736972751D8E7FB8A2FC1AC /* Collection+Ex.swift */,
-				6A5F493854D53BECE3D0B16C479754EA /* Date+Ex.swift */,
-				02804D59413C62D1E3469B1A77DB904D /* Dictionary+Ex.swift */,
-				B55A12336DDA8DFB8518FDCCCD85858D /* FileManager+Ex.swift */,
-				0948CF01749FF88106C998C723A1FCE4 /* NSAttributedString+Ex.swift */,
-				47108EF34070A9DB08449F4DF76889F3 /* NSObject+Ex.swift */,
-				41DD880CBA6F46D031C9185F54707FFE /* String+Ex.swift */,
-				2826D29E72319AC9F11E1D749B9926ED /* UserDefaults+Ex.swift */,
+				20884F6C567F9CF6624E2D7EAFDE4343 /* KeenExtension.modulemap */,
+				39C8BA257C5378E19ED3F1993F075847 /* KeenExtension.xcconfig */,
+				E9959A35ADAC9798BB5BC3C33BEA98B5 /* KeenExtension-dummy.m */,
+				C9B1C7E6715BDE2D4680F86ADA559447 /* KeenExtension-Info.plist */,
+				98DADBFDC8EECAC0448649216C8F9062 /* KeenExtension-prefix.pch */,
+				DBD6A20D4551055D64FC24BF3D326FCC /* KeenExtension-umbrella.h */,
 			);
-			name = FoundationEx;
-			path = KeenExtension/Classes/FoundationEx;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KeenExtension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,11 +321,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC7F7F8762BF62FB8D47A862230D6A21 /* Headers */ = {
+		84DFFE1A02B6AABE48243E47CA9C3C10 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95880548F6F6C3FC7C98B5DA80E51FAF /* KeenExtension-umbrella.h in Headers */,
+				3350FBC310F09AB74529C5C505CE1E3A /* KeenExtension-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +344,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				4E246B95CC26FB551F7DB77A0C823358 /* PBXTargetDependency */,
+				496E256EDD8F835AA77097C6EC600ED9 /* PBXTargetDependency */,
 			);
 			name = "Pods-KeenExtension_Tests";
 			productName = "Pods-KeenExtension_Tests";
@@ -360,7 +363,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				7A49F71F4EB7780095DA338E7F93B9AD /* PBXTargetDependency */,
+				94CCC494B62846464FFF1DEDDF67DC7D /* PBXTargetDependency */,
 			);
 			name = "Pods-KeenExtension_Example";
 			productName = "Pods-KeenExtension_Example";
@@ -369,12 +372,12 @@
 		};
 		72A043D5379178C4D173F29E9189D4F5 /* KeenExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D8F54C54DFB3C432AB1E39485C2F8A0 /* Build configuration list for PBXNativeTarget "KeenExtension" */;
+			buildConfigurationList = 625D49352B443053F670A883BBA5F74B /* Build configuration list for PBXNativeTarget "KeenExtension" */;
 			buildPhases = (
-				EC7F7F8762BF62FB8D47A862230D6A21 /* Headers */,
-				E89205D1BFB6307403D1DD9914D4449E /* Sources */,
-				C1A8712BBAD5D7E76C14A09BA21EF809 /* Frameworks */,
-				D0905CF41164080BDA98ABA7C1BBB714 /* Resources */,
+				84DFFE1A02B6AABE48243E47CA9C3C10 /* Headers */,
+				E0F49C87A44DFAB4A5A0D20260D079F6 /* Sources */,
+				CC0F818460D3FBD623E1AA89A5C78CE0 /* Frameworks */,
+				9E06F6A8638ED691567F0BAA4F81CBDD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -429,7 +432,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0905CF41164080BDA98ABA7C1BBB714 /* Resources */ = {
+		9E06F6A8638ED691567F0BAA4F81CBDD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -455,53 +458,85 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E89205D1BFB6307403D1DD9914D4449E /* Sources */ = {
+		E0F49C87A44DFAB4A5A0D20260D079F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2A3DEFFD293563FC90867488B0F7B93 /* Array+Ex.swift in Sources */,
-				A784824AB244570C88584C427B728304 /* Basic+Ex.swift in Sources */,
-				F211B590CC6C97390AAA35493961EAFA /* Bundle+Ex.swift in Sources */,
-				D079607AD56FCF84072D94D02F01C2DE /* CALayer+Ex.swift in Sources */,
-				B9564EB5D88FE4998E1F0C3DF27650F1 /* Collection+Ex.swift in Sources */,
-				8A641238516CD93183E29140244CADFF /* Date+Ex.swift in Sources */,
-				DAA9A6B21A0F93BF0A662D048189C962 /* Dictionary+Ex.swift in Sources */,
-				199225CCD249DAB0AD45F975BDC332E8 /* FileManager+Ex.swift in Sources */,
-				57066770369D4DC607A21DBBC5388877 /* KcPrefixWrapper.swift in Sources */,
-				DCBA2CE723FB23C5EA5211AEF988B444 /* KeenExtension-dummy.m in Sources */,
-				33255553FCEE295CD098E31B06D6D7B4 /* NSAttributedString+Ex.swift in Sources */,
-				0C842798E74D1C14EE39EEB080089B39 /* NSObject+Ex.swift in Sources */,
-				DEC42D913CF3B748E54166B8A02494C4 /* String+Ex.swift in Sources */,
-				23B7D909A71D6CE32014CCFA87103E37 /* UIColor+Ex.swift in Sources */,
-				3AEFD23FC26E68A935E60455A7EC81E7 /* UIDevice+Ex.swift in Sources */,
-				EDD4A3AE1720D4096649EF9946DCE687 /* UIFont+Ex.swift in Sources */,
-				F1A7797902CC61DE0658421EC2CE92F7 /* UILabel+Ex.swift in Sources */,
-				1338E3C503FEE36DABB0EEADEA1FC48A /* UIView+Ex.swift in Sources */,
-				E0345DE9883508596DF380DB0751DD23 /* UserDefaults+Ex.swift in Sources */,
+				9CB061596E1371D8F0DF9C65524F0794 /* Array+Ex.swift in Sources */,
+				CE3617F270BCEF40BE80527D81F43830 /* Basic+Ex.swift in Sources */,
+				FE098C704D306A4EC708D77E759ABF3F /* Bundle+Ex.swift in Sources */,
+				10C8C31764A18DF3836D839FDFE236E3 /* CALayer+Ex.swift in Sources */,
+				C5DC7FFABADB49155DC451E31CE16E7B /* Collection+Ex.swift in Sources */,
+				D8268E0EF590AB4BA8DA9216934C29DD /* Data+Ex.swift in Sources */,
+				9D9E50BB3A52AD27FB0D1330FC3A5D74 /* Date+Ex.swift in Sources */,
+				D6724BA822A03523B51110EC3444E2A1 /* Dictionary+Ex.swift in Sources */,
+				5A5E3B71099973A0D19D7283A73B2DFE /* FileManager+Ex.swift in Sources */,
+				386DBE9789BE3F5B6E060A7FB7BDB220 /* KcPrefixWrapper.swift in Sources */,
+				F9DE53A2CD110585F8ACA7CDC54AE36F /* KeenExtension-dummy.m in Sources */,
+				99C81D5965363EBD5573FD4DE3A70C9F /* NSAttributedString+Ex.swift in Sources */,
+				275ECFA172A426A2AAE092D0EDC64F33 /* NSObject+Ex.swift in Sources */,
+				2C99B4939C839D951E598F133861319C /* String+Ex.swift in Sources */,
+				59057C8071D04FE8D841F484E45A6F95 /* UIColor+Ex.swift in Sources */,
+				4591010534385318FCF3DC03742BED2C /* UIDevice+Ex.swift in Sources */,
+				4675123F1C0336C9832304300AA8605E /* UIFont+Ex.swift in Sources */,
+				873CF0E1A13D26F8BAF9389368A3D0A0 /* UILabel+Ex.swift in Sources */,
+				ADD34F84ECCE8DB0656D79E5E36C7956 /* UIView+Ex.swift in Sources */,
+				0EECD31C5186F1C33EFF8437CFC62B72 /* UserDefaults+Ex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4E246B95CC26FB551F7DB77A0C823358 /* PBXTargetDependency */ = {
+		496E256EDD8F835AA77097C6EC600ED9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-KeenExtension_Example";
 			target = 4B078034D85AB604EDFC09203E2CE79C /* Pods-KeenExtension_Example */;
-			targetProxy = 6E191AEA1F64C5EF4E3D4BD99BB66889 /* PBXContainerItemProxy */;
+			targetProxy = 46B59846FF1E027A2A947B4F7EFD774B /* PBXContainerItemProxy */;
 		};
-		7A49F71F4EB7780095DA338E7F93B9AD /* PBXTargetDependency */ = {
+		94CCC494B62846464FFF1DEDDF67DC7D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KeenExtension;
 			target = 72A043D5379178C4D173F29E9189D4F5 /* KeenExtension */;
-			targetProxy = C25490A47A7AF86140834D84B5220EEB /* PBXContainerItemProxy */;
+			targetProxy = 545C1FC667E85C16AB0A276548A39274 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		46E8E714C5011D7E7901BFFB14344B13 /* Release */ = {
+		006A5F4CDBA94E13EBF6E8F1926B6286 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 895AFC05804B295702F33D3B96772012 /* KeenExtension.xcconfig */;
+			baseConfigurationReference = 39C8BA257C5378E19ED3F1993F075847 /* KeenExtension.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeenExtension/KeenExtension-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeenExtension/KeenExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KeenExtension/KeenExtension.modulemap";
+				PRODUCT_MODULE_NAME = KeenExtension;
+				PRODUCT_NAME = KeenExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		331CDF852D53B5F18C6240BB4CAB01E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39C8BA257C5378E19ED3F1993F075847 /* KeenExtension.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -530,37 +565,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		555A7F00EECF85453428C0C08A50955F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 895AFC05804B295702F33D3B96772012 /* KeenExtension.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KeenExtension/KeenExtension-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KeenExtension/KeenExtension-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KeenExtension/KeenExtension.modulemap";
-				PRODUCT_MODULE_NAME = KeenExtension;
-				PRODUCT_NAME = KeenExtension;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		78B15DAA88C76594E8AB234171B7EC09 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -843,20 +847,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		625D49352B443053F670A883BBA5F74B /* Build configuration list for PBXNativeTarget "KeenExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				006A5F4CDBA94E13EBF6E8F1926B6286 /* Debug */,
+				331CDF852D53B5F18C6240BB4CAB01E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6991760401D4D82A26718702D8D0FEFD /* Build configuration list for PBXNativeTarget "Pods-KeenExtension_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				78B15DAA88C76594E8AB234171B7EC09 /* Debug */,
 				FF1A81163BDD559BE1336279C41B40A0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9D8F54C54DFB3C432AB1E39485C2F8A0 /* Build configuration list for PBXNativeTarget "KeenExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				555A7F00EECF85453428C0C08A50955F /* Debug */,
-				46E8E714C5011D7E7901BFFB14344B13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
