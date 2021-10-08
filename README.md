@@ -35,8 +35,9 @@
 - [x] `UIView` 链式属性、形变、阴影圆角、截屏、事件点击、常见的动画等
 - [x] `UITextView` 链式属性、占位符、限制输入字数、高度根据内容自动变化等
 - [x] `UITextField` 链式属性、左右视图、文本格式化等
-- [x] `UIDatePicker` 链式属性 
-- [x]  `UIProgressView` 链式属性 
+- [x] `UIDatePicker`  `UIProgressView`  链式属性 
+- [x] `UIImage` 链式属性、合成渐变水印、裁剪缩放、抠图滤镜、二维码条形码、Gif 图加载等 
+- [x] `UIImageView` 链式属性
 
 ## 安装方式 
 
