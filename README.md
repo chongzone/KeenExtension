@@ -16,10 +16,12 @@
 - [x] `NSObject` 类名获取、运行时运用等
 - [x] `Data` 根据字节数据流得到图片类型 
 - [x] `String` 索引、截取、字符串转换、有效性校验等
+- [x] `DispatchQueue` 异步事件、延迟事件、主线程事件等
 - [x] `UserDefaults`  对系统对象、自定义对象的增删改查等
 - [x] `Date`  年份月份天数周数等具体日期、日期字符串转换等
 - [x] `NSAttributedString` 链式属性、附件插入、富文本设置等
 - [x] `FileManager` 文件路径、文件的读写拷贝移动、文件大小、属性等
+- [x] `AVAssetExportSession` 本地视频压缩
 
 #### `UIKit` 系统库
 - [x] 基本类型转换、视觉适配等
