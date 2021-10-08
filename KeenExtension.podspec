@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name          = 'KeenExtension'
-  s.version       = '1.0.3'
+  s.version       = '1.0.4'
   s.summary       = '对 UIKit、Foundation 等系统库中常见控件属性、函数的扩展'
   s.homepage      = 'https://github.com/chongzone/KeenExtension'
   s.license       = { :type => 'MIT', :file => 'LICENSE' }
