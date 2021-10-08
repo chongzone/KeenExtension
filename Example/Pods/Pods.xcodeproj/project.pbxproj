@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		127C063C22097C5C6BAA751351FD2E06 /* UIFont+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5284914E47AC82ED6619B3CF3D23145 /* UIFont+Ex.swift */; };
-		25447CC673D34604B3CD61518ACCBCDC /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EF1A83FD09A5AB459AD372EFD8F656 /* UIView+Ex.swift */; };
+		127C063C22097C5C6BAA751351FD2E06 /* UIFont+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE3FDFFF14ED6B904BD1794BEF6C951 /* UIFont+Ex.swift */; };
+		25447CC673D34604B3CD61518ACCBCDC /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D4EF9626CCF8B899BBC29EED7105A6 /* UIView+Ex.swift */; };
 		2C186DC286E22B439200A67E45B36A15 /* Pods-KeenExtension_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC2BCD6D0AFBDCF7A740194B2D34D31 /* Pods-KeenExtension_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35AD9CF34FD8760EEECE83F9CB1D69ED /* Pods-KeenExtension_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8976F2E1ACE6F97AF6375A1F295C5D59 /* Pods-KeenExtension_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3885E85CB7979116182314CE176FB68D /* Collection+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF283190D046F1AEAFE49C19B9ED44A /* Collection+Ex.swift */; };
-		444EF363F1E7E8B6C9EF9BBF757D8DFB /* UIDevice+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDE3F15C887A541A856ABAAEC174E0 /* UIDevice+Ex.swift */; };
-		685E50427FB2D83B7AB432123E4078ED /* Bundle+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9749ACBD2A65EFDE31C78736094B5 /* Bundle+Ex.swift */; };
-		6D5F00193246205768341D9A0A28A5EB /* KcPrefixWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3417AF0C6ABB8A35C28EE9EEA569C1DE /* KcPrefixWrapper.swift */; };
-		82A381A79D88BCA0CC567E1B26E0F4CA /* Array+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A011671E2E409B57E53A1A2EAE90DB /* Array+Ex.swift */; };
-		86B74FFAA1C6FFB6DA3E63A3B6541109 /* Basic+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBE6FEC08713EEB73232C4E83BA988C /* Basic+Ex.swift */; };
-		95880548F6F6C3FC7C98B5DA80E51FAF /* KeenExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10212BFCB26EE105AAA5797F17AD37E7 /* KeenExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C719F953D1D8C5041825890DE27020F /* CALayer+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044692EC7AD9B117155F1FD55A8D66A0 /* CALayer+Ex.swift */; };
-		9FB0DF0A627B620C9389736E6A38A525 /* UILabel+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C152920B73B27C183BC06A7727F27033 /* UILabel+Ex.swift */; };
-		A5E179EF161E928E06F0E3F03B100A5C /* UIColor+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD1E52782E3FFC1CAA59683C5F77A0 /* UIColor+Ex.swift */; };
-		A7C77F3919A447721B03CA6AFBE62344 /* NSAttributedString+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB059114128EC9A4CDEE02720E6B4C /* NSAttributedString+Ex.swift */; };
-		A96D84165C7B44D5E7946691816D0852 /* KeenExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAC890DB06D00732C47BC20AFDABEAE /* KeenExtension-dummy.m */; };
-		AF9A9BA1EC8166170E4FE2DACF2709FA /* UserDefaults+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC46FCFFD678EBEF035A51DD0A25A31 /* UserDefaults+Ex.swift */; };
+		3885E85CB7979116182314CE176FB68D /* Collection+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BBC769A9EF18DF52B46341426BCDB8 /* Collection+Ex.swift */; };
+		444EF363F1E7E8B6C9EF9BBF757D8DFB /* UIDevice+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8947A945D74B748E8EBDDE046474EB5 /* UIDevice+Ex.swift */; };
+		685E50427FB2D83B7AB432123E4078ED /* Bundle+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BED5AC7A33B1E3568FCDB0860F8198B /* Bundle+Ex.swift */; };
+		6D5F00193246205768341D9A0A28A5EB /* KcPrefixWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09C0A728A7EFF0C8B9F56B1C423FD4 /* KcPrefixWrapper.swift */; };
+		82A381A79D88BCA0CC567E1B26E0F4CA /* Array+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF8D88C19696AAFBB6A1012A538D723 /* Array+Ex.swift */; };
+		86B74FFAA1C6FFB6DA3E63A3B6541109 /* Basic+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36FE4635FFF80B218008D3110061800 /* Basic+Ex.swift */; };
+		95880548F6F6C3FC7C98B5DA80E51FAF /* KeenExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AE6F2E109B4DBFD875F8609D8401458 /* KeenExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C719F953D1D8C5041825890DE27020F /* CALayer+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97948BB855AF89FCCE2E9A91640B0FF /* CALayer+Ex.swift */; };
+		9FB0DF0A627B620C9389736E6A38A525 /* UILabel+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A49BADBC6A7FE2F5009605217277EF /* UILabel+Ex.swift */; };
+		A5E179EF161E928E06F0E3F03B100A5C /* UIColor+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D431DDA8955241368DA329C554B8D /* UIColor+Ex.swift */; };
+		A7C77F3919A447721B03CA6AFBE62344 /* NSAttributedString+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B9385344A44522DF07E3269D6B062 /* NSAttributedString+Ex.swift */; };
+		A96D84165C7B44D5E7946691816D0852 /* KeenExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D55D56CF05725EC1315195C04309FDEE /* KeenExtension-dummy.m */; };
+		AF9A9BA1EC8166170E4FE2DACF2709FA /* UserDefaults+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED48C250B8AA194F35A74F80B92A26 /* UserDefaults+Ex.swift */; };
 		B27FEAAE736B0243F6160A49AF4E2CD9 /* Pods-KeenExtension_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4EAB9FBE16EE972D2DA5AEBA3F19B4 /* Pods-KeenExtension_Tests-dummy.m */; };
-		C503A6D3ECE6378B038639ED2158B5F9 /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B25072B0D1AA1142574641C838055 /* Date+Ex.swift */; };
-		D4BEED5A706FAA186BEEF5DB7DFC4847 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA928169997F76C4ACBFA31C14F915EA /* String+Ex.swift */; };
-		D537AFC304C7558298012805AADEE903 /* NSObject+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7F40D5EFB7E311021BB20F9FA3CF22 /* NSObject+Ex.swift */; };
+		C503A6D3ECE6378B038639ED2158B5F9 /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3AE17A7C996890E3A576EDB91B6DAD /* Date+Ex.swift */; };
+		D4BEED5A706FAA186BEEF5DB7DFC4847 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CC859E55FF8FF4E4C636FA13951BCA /* String+Ex.swift */; };
+		D537AFC304C7558298012805AADEE903 /* NSObject+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140BD2ED05091CB7390A03ECF6193EB7 /* NSObject+Ex.swift */; };
 		E1B2A75AFA78CB211F2499ADE7ABFB8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E4C39345D1F2C434515A07132EE8AEF6 /* FileManager+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677B40C84F71B5DC9BC7AAF44A0E269 /* FileManager+Ex.swift */; };
+		E4C39345D1F2C434515A07132EE8AEF6 /* FileManager+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9407C7B885DD915BAA64FFB06F41698B /* FileManager+Ex.swift */; };
 		E844D699DDAC4AE3C4D24E6FB0EBFE88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		EBB6BC5BF3DD02268FA117C6AA6AFFD2 /* Dictionary+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518AE5D64AD44F5D0F2BFDE45E15579B /* Dictionary+Ex.swift */; };
+		EBB6BC5BF3DD02268FA117C6AA6AFFD2 /* Dictionary+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3462F1397CB8169AD58AB7B80CEA96A /* Dictionary+Ex.swift */; };
 		F3ED771AEE4E00275A0FEF2B8BBA0BF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		F6346D6F7DDB0B1BA8CA224F211127DE /* Pods-KeenExtension_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 734A82297E344EAF50C128B91DD59019 /* Pods-KeenExtension_Example-dummy.m */; };
 /* End PBXBuildFile section */
@@ -55,54 +55,54 @@
 
 /* Begin PBXFileReference section */
 		00A537F2DED29B8B97156E03F88D6FBE /* Pods_KeenExtension_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KeenExtension_Tests.framework; path = "Pods-KeenExtension_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		044692EC7AD9B117155F1FD55A8D66A0 /* CALayer+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CALayer+Ex.swift"; sourceTree = "<group>"; };
-		08D2E667540F9EFF19ADF57F06134F67 /* KeenExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeenExtension.xcconfig; sourceTree = "<group>"; };
-		10212BFCB26EE105AAA5797F17AD37E7 /* KeenExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeenExtension-umbrella.h"; sourceTree = "<group>"; };
-		1CF772DBF27862A09F1921EDC99343BD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		1F7F40D5EFB7E311021BB20F9FA3CF22 /* NSObject+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSObject+Ex.swift"; sourceTree = "<group>"; };
-		2BBE6FEC08713EEB73232C4E83BA988C /* Basic+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Basic+Ex.swift"; sourceTree = "<group>"; };
-		3417AF0C6ABB8A35C28EE9EEA569C1DE /* KcPrefixWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KcPrefixWrapper.swift; sourceTree = "<group>"; };
+		140BD2ED05091CB7390A03ECF6193EB7 /* NSObject+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSObject+Ex.swift"; sourceTree = "<group>"; };
+		16110601BC01A1D3BE48D111EF942B55 /* KeenExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeenExtension-prefix.pch"; sourceTree = "<group>"; };
+		17C9D3A229980342BA1B818504EB4D8C /* KeenExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeenExtension.modulemap; sourceTree = "<group>"; };
+		27E1C2E8D68B9E7160FA4864709783C6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		34A7A8DBD25C0C3538F9B031C947E3E7 /* Pods-KeenExtension_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KeenExtension_Tests.modulemap"; sourceTree = "<group>"; };
-		40A9749ACBD2A65EFDE31C78736094B5 /* Bundle+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+Ex.swift"; sourceTree = "<group>"; };
-		4DFD1E52782E3FFC1CAA59683C5F77A0 /* UIColor+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+Ex.swift"; sourceTree = "<group>"; };
-		518AE5D64AD44F5D0F2BFDE45E15579B /* Dictionary+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ex.swift"; sourceTree = "<group>"; };
+		3DE3FDFFF14ED6B904BD1794BEF6C951 /* UIFont+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+Ex.swift"; sourceTree = "<group>"; };
+		4AF8D88C19696AAFBB6A1012A538D723 /* Array+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Ex.swift"; sourceTree = "<group>"; };
+		4BED5AC7A33B1E3568FCDB0860F8198B /* Bundle+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+Ex.swift"; sourceTree = "<group>"; };
+		50A49BADBC6A7FE2F5009605217277EF /* UILabel+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UILabel+Ex.swift"; sourceTree = "<group>"; };
+		56CC859E55FF8FF4E4C636FA13951BCA /* String+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
+		5AE6F2E109B4DBFD875F8609D8401458 /* KeenExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeenExtension-umbrella.h"; sourceTree = "<group>"; };
 		5E4E95A5D002F4DA213314AB76F64911 /* Pods-KeenExtension_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KeenExtension_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6315404A6B0BBC42E2063F7C070EBA1E /* KeenExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeenExtension-prefix.pch"; sourceTree = "<group>"; };
 		67412E2A82DC10ED184C2938E1212306 /* Pods-KeenExtension_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeenExtension_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6E3AE17A7C996890E3A576EDB91B6DAD /* Date+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
 		6F4EAB9FBE16EE972D2DA5AEBA3F19B4 /* Pods-KeenExtension_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KeenExtension_Tests-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		734A82297E344EAF50C128B91DD59019 /* Pods-KeenExtension_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KeenExtension_Example-dummy.m"; sourceTree = "<group>"; };
-		7482701656C8EB1882FCD45620A77C33 /* KeenExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeenExtension.modulemap; sourceTree = "<group>"; };
-		7677B40C84F71B5DC9BC7AAF44A0E269 /* FileManager+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FileManager+Ex.swift"; sourceTree = "<group>"; };
-		7F3424F0B0E87CB31137E1950B74E0B6 /* KeenExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeenExtension-Info.plist"; sourceTree = "<group>"; };
 		80A944150A510AF187D8E0D955F78293 /* Pods-KeenExtension_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeenExtension_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		812D3611CCC0B141EB3E2E611B234642 /* Pods-KeenExtension_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KeenExtension_Example-frameworks.sh"; sourceTree = "<group>"; };
+		839B9385344A44522DF07E3269D6B062 /* NSAttributedString+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Ex.swift"; sourceTree = "<group>"; };
 		8976F2E1ACE6F97AF6375A1F295C5D59 /* Pods-KeenExtension_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KeenExtension_Example-umbrella.h"; sourceTree = "<group>"; };
-		8B4B25072B0D1AA1142574641C838055 /* Date+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
 		8EC3EF79EA4E5DCD9E96E163D19019F6 /* Pods-KeenExtension_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeenExtension_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		8FBD76FC2FBF04ECF82BF05F54DF184C /* Pods-KeenExtension_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeenExtension_Tests-Info.plist"; sourceTree = "<group>"; };
+		92D4EF9626CCF8B899BBC29EED7105A6 /* UIView+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Ex.swift"; sourceTree = "<group>"; };
+		9407C7B885DD915BAA64FFB06F41698B /* FileManager+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FileManager+Ex.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DC2BCD6D0AFBDCF7A740194B2D34D31 /* Pods-KeenExtension_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KeenExtension_Tests-umbrella.h"; sourceTree = "<group>"; };
 		A84EDAB27A9B820E133A1837BB37C5A0 /* Pods-KeenExtension_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeenExtension_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A8A011671E2E409B57E53A1A2EAE90DB /* Array+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Ex.swift"; sourceTree = "<group>"; };
-		AA928169997F76C4ACBFA31C14F915EA /* String+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
+		A97948BB855AF89FCCE2E9A91640B0FF /* CALayer+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CALayer+Ex.swift"; sourceTree = "<group>"; };
 		AC6E73303416595A4F53836E7A0F5222 /* KeenExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeenExtension.framework; path = KeenExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEC46FCFFD678EBEF035A51DD0A25A31 /* UserDefaults+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ex.swift"; sourceTree = "<group>"; };
 		AF8F6DFF460BFC583A7FED5DE9A50012 /* Pods-KeenExtension_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeenExtension_Example-Info.plist"; sourceTree = "<group>"; };
-		B5284914E47AC82ED6619B3CF3D23145 /* UIFont+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+Ex.swift"; sourceTree = "<group>"; };
-		BCF283190D046F1AEAFE49C19B9ED44A /* Collection+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Collection+Ex.swift"; sourceTree = "<group>"; };
-		C152920B73B27C183BC06A7727F27033 /* UILabel+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UILabel+Ex.swift"; sourceTree = "<group>"; };
 		CB0D03B63380475036CA7BD251CBDA96 /* Pods-KeenExtension_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeenExtension_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1BBC769A9EF18DF52B46341426BCDB8 /* Collection+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Collection+Ex.swift"; sourceTree = "<group>"; };
 		D247B92C2410A92D3907687CC00504B5 /* Pods-KeenExtension_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KeenExtension_Example.modulemap"; sourceTree = "<group>"; };
-		D3D4038C0837BAFCB1A452A07AF3BA9A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		DB9A499EE2DFDA11B31F2E39158C7CC4 /* KeenExtension.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KeenExtension.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		DFFB059114128EC9A4CDEE02720E6B4C /* NSAttributedString+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Ex.swift"; sourceTree = "<group>"; };
-		E2EF1A83FD09A5AB459AD372EFD8F656 /* UIView+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Ex.swift"; sourceTree = "<group>"; };
+		D55D56CF05725EC1315195C04309FDEE /* KeenExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeenExtension-dummy.m"; sourceTree = "<group>"; };
+		E3462F1397CB8169AD58AB7B80CEA96A /* Dictionary+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ex.swift"; sourceTree = "<group>"; };
+		E36FE4635FFF80B218008D3110061800 /* Basic+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Basic+Ex.swift"; sourceTree = "<group>"; };
 		E5D097998BF52CA78B98774548313483 /* Pods-KeenExtension_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KeenExtension_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E84FFF1CE34132C3519E085396E7B08E /* KeenExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeenExtension-Info.plist"; sourceTree = "<group>"; };
 		EB4A2F1612FF89D2EC964BE8E2F09D92 /* Pods-KeenExtension_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeenExtension_Example.release.xcconfig"; sourceTree = "<group>"; };
-		EDAC890DB06D00732C47BC20AFDABEAE /* KeenExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeenExtension-dummy.m"; sourceTree = "<group>"; };
+		EBED48C250B8AA194F35A74F80B92A26 /* UserDefaults+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ex.swift"; sourceTree = "<group>"; };
+		ED09C0A728A7EFF0C8B9F56B1C423FD4 /* KcPrefixWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KcPrefixWrapper.swift; sourceTree = "<group>"; };
+		F3DBE9A4560A48D86DA04E4820D71613 /* KeenExtension.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KeenExtension.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F5C5DBCBC531BB1699FE2BD470EEE7C3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F8947A945D74B748E8EBDDE046474EB5 /* UIDevice+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIDevice+Ex.swift"; sourceTree = "<group>"; };
 		F9C6F1A6C5B988001405E44630C482FB /* Pods_KeenExtension_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KeenExtension_Example.framework; path = "Pods-KeenExtension_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBBDE3F15C887A541A856ABAAEC174E0 /* UIDevice+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIDevice+Ex.swift"; sourceTree = "<group>"; };
+		FDB6578454F520805A3335AF56228FE1 /* KeenExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeenExtension.xcconfig; sourceTree = "<group>"; };
+		FE0D431DDA8955241368DA329C554B8D /* UIColor+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+Ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,24 +133,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C3DC589F855FCDCD5176932CF4BE354 /* NameSpace */ = {
+		4B48A84F972A9A2049D58ACD60DD9069 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3417AF0C6ABB8A35C28EE9EEA569C1DE /* KcPrefixWrapper.swift */,
-			);
-			name = NameSpace;
-			path = KeenExtension/Classes/NameSpace;
-			sourceTree = "<group>";
-		};
-		2D1C6AD525E0BCD4683B31C4ADA437F8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7482701656C8EB1882FCD45620A77C33 /* KeenExtension.modulemap */,
-				08D2E667540F9EFF19ADF57F06134F67 /* KeenExtension.xcconfig */,
-				EDAC890DB06D00732C47BC20AFDABEAE /* KeenExtension-dummy.m */,
-				7F3424F0B0E87CB31137E1950B74E0B6 /* KeenExtension-Info.plist */,
-				6315404A6B0BBC42E2063F7C070EBA1E /* KeenExtension-prefix.pch */,
-				10212BFCB26EE105AAA5797F17AD37E7 /* KeenExtension-umbrella.h */,
+				17C9D3A229980342BA1B818504EB4D8C /* KeenExtension.modulemap */,
+				FDB6578454F520805A3335AF56228FE1 /* KeenExtension.xcconfig */,
+				D55D56CF05725EC1315195C04309FDEE /* KeenExtension-dummy.m */,
+				E84FFF1CE34132C3519E085396E7B08E /* KeenExtension-Info.plist */,
+				16110601BC01A1D3BE48D111EF942B55 /* KeenExtension-prefix.pch */,
+				5AE6F2E109B4DBFD875F8609D8401458 /* KeenExtension-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/KeenExtension";
@@ -173,6 +164,21 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		674113079124109719C8B1B7066D818E /* UIKitEx */ = {
+			isa = PBXGroup;
+			children = (
+				E36FE4635FFF80B218008D3110061800 /* Basic+Ex.swift */,
+				A97948BB855AF89FCCE2E9A91640B0FF /* CALayer+Ex.swift */,
+				FE0D431DDA8955241368DA329C554B8D /* UIColor+Ex.swift */,
+				F8947A945D74B748E8EBDDE046474EB5 /* UIDevice+Ex.swift */,
+				3DE3FDFFF14ED6B904BD1794BEF6C951 /* UIFont+Ex.swift */,
+				50A49BADBC6A7FE2F5009605217277EF /* UILabel+Ex.swift */,
+				92D4EF9626CCF8B899BBC29EED7105A6 /* UIView+Ex.swift */,
+			);
+			name = UIKitEx;
+			path = KeenExtension/Classes/UIKitEx;
+			sourceTree = "<group>";
+		};
 		8D5A616B9557770A29E71697CC1C1B63 /* Pods-KeenExtension_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,25 +195,28 @@
 			path = "Target Support Files/Pods-KeenExtension_Tests";
 			sourceTree = "<group>";
 		};
-		9C040C867D533B5B0579171EF4ECEE58 /* UIKitEx */ = {
+		9A12485CC3C55034F5FD58371636D28D /* FoundationEx */ = {
 			isa = PBXGroup;
 			children = (
-				2BBE6FEC08713EEB73232C4E83BA988C /* Basic+Ex.swift */,
-				044692EC7AD9B117155F1FD55A8D66A0 /* CALayer+Ex.swift */,
-				4DFD1E52782E3FFC1CAA59683C5F77A0 /* UIColor+Ex.swift */,
-				FBBDE3F15C887A541A856ABAAEC174E0 /* UIDevice+Ex.swift */,
-				B5284914E47AC82ED6619B3CF3D23145 /* UIFont+Ex.swift */,
-				C152920B73B27C183BC06A7727F27033 /* UILabel+Ex.swift */,
-				E2EF1A83FD09A5AB459AD372EFD8F656 /* UIView+Ex.swift */,
+				4AF8D88C19696AAFBB6A1012A538D723 /* Array+Ex.swift */,
+				4BED5AC7A33B1E3568FCDB0860F8198B /* Bundle+Ex.swift */,
+				D1BBC769A9EF18DF52B46341426BCDB8 /* Collection+Ex.swift */,
+				6E3AE17A7C996890E3A576EDB91B6DAD /* Date+Ex.swift */,
+				E3462F1397CB8169AD58AB7B80CEA96A /* Dictionary+Ex.swift */,
+				9407C7B885DD915BAA64FFB06F41698B /* FileManager+Ex.swift */,
+				839B9385344A44522DF07E3269D6B062 /* NSAttributedString+Ex.swift */,
+				140BD2ED05091CB7390A03ECF6193EB7 /* NSObject+Ex.swift */,
+				56CC859E55FF8FF4E4C636FA13951BCA /* String+Ex.swift */,
+				EBED48C250B8AA194F35A74F80B92A26 /* UserDefaults+Ex.swift */,
 			);
-			name = UIKitEx;
-			path = KeenExtension/Classes/UIKitEx;
+			name = FoundationEx;
+			path = KeenExtension/Classes/FoundationEx;
 			sourceTree = "<group>";
 		};
 		9D01C65ADD72AD7DE9C06EA4C42EA3EE /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E1C5D1ED7D0B04051FEE8B529C13F600 /* KeenExtension */,
+				C9EEC6C8A102D0E258048BA0481D7E3B /* KeenExtension */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -220,24 +229,6 @@
 				00A537F2DED29B8B97156E03F88D6FBE /* Pods_KeenExtension_Tests.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B5334A7D1E65FE09C904D7EB96DE3D48 /* FoundationEx */ = {
-			isa = PBXGroup;
-			children = (
-				A8A011671E2E409B57E53A1A2EAE90DB /* Array+Ex.swift */,
-				40A9749ACBD2A65EFDE31C78736094B5 /* Bundle+Ex.swift */,
-				BCF283190D046F1AEAFE49C19B9ED44A /* Collection+Ex.swift */,
-				8B4B25072B0D1AA1142574641C838055 /* Date+Ex.swift */,
-				518AE5D64AD44F5D0F2BFDE45E15579B /* Dictionary+Ex.swift */,
-				7677B40C84F71B5DC9BC7AAF44A0E269 /* FileManager+Ex.swift */,
-				DFFB059114128EC9A4CDEE02720E6B4C /* NSAttributedString+Ex.swift */,
-				1F7F40D5EFB7E311021BB20F9FA3CF22 /* NSObject+Ex.swift */,
-				AA928169997F76C4ACBFA31C14F915EA /* String+Ex.swift */,
-				AEC46FCFFD678EBEF035A51DD0A25A31 /* UserDefaults+Ex.swift */,
-			);
-			name = FoundationEx;
-			path = KeenExtension/Classes/FoundationEx;
 			sourceTree = "<group>";
 		};
 		B7D806B5B4723909774E7608AE1BB56C /* Pods-KeenExtension_Example */ = {
@@ -255,6 +246,29 @@
 			);
 			name = "Pods-KeenExtension_Example";
 			path = "Target Support Files/Pods-KeenExtension_Example";
+			sourceTree = "<group>";
+		};
+		C9EEC6C8A102D0E258048BA0481D7E3B /* KeenExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9A12485CC3C55034F5FD58371636D28D /* FoundationEx */,
+				CBA07A8D224C9CDA2260813B6E09E050 /* Pod */,
+				D3B3C7A1FB19EFC6117646E5833B5087 /* Protocols */,
+				4B48A84F972A9A2049D58ACD60DD9069 /* Support Files */,
+				674113079124109719C8B1B7066D818E /* UIKitEx */,
+			);
+			name = KeenExtension;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CBA07A8D224C9CDA2260813B6E09E050 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F3DBE9A4560A48D86DA04E4820D71613 /* KeenExtension.podspec */,
+				27E1C2E8D68B9E7160FA4864709783C6 /* LICENSE */,
+				F5C5DBCBC531BB1699FE2BD470EEE7C3 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -276,27 +290,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E1C5D1ED7D0B04051FEE8B529C13F600 /* KeenExtension */ = {
+		D3B3C7A1FB19EFC6117646E5833B5087 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				B5334A7D1E65FE09C904D7EB96DE3D48 /* FoundationEx */,
-				2C3DC589F855FCDCD5176932CF4BE354 /* NameSpace */,
-				E3BA34BA332EBFE6B278E64E5E79524B /* Pod */,
-				2D1C6AD525E0BCD4683B31C4ADA437F8 /* Support Files */,
-				9C040C867D533B5B0579171EF4ECEE58 /* UIKitEx */,
+				ED09C0A728A7EFF0C8B9F56B1C423FD4 /* KcPrefixWrapper.swift */,
 			);
-			name = KeenExtension;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		E3BA34BA332EBFE6B278E64E5E79524B /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				DB9A499EE2DFDA11B31F2E39158C7CC4 /* KeenExtension.podspec */,
-				1CF772DBF27862A09F1921EDC99343BD /* LICENSE */,
-				D3D4038C0837BAFCB1A452A07AF3BA9A /* README.md */,
-			);
-			name = Pod;
+			name = Protocols;
+			path = KeenExtension/Classes/Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -501,7 +501,7 @@
 /* Begin XCBuildConfiguration section */
 		46E8E714C5011D7E7901BFFB14344B13 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08D2E667540F9EFF19ADF57F06134F67 /* KeenExtension.xcconfig */;
+			baseConfigurationReference = FDB6578454F520805A3335AF56228FE1 /* KeenExtension.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -533,7 +533,7 @@
 		};
 		555A7F00EECF85453428C0C08A50955F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08D2E667540F9EFF19ADF57F06134F67 /* KeenExtension.xcconfig */;
+			baseConfigurationReference = FDB6578454F520805A3335AF56228FE1 /* KeenExtension.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
