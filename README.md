@@ -36,6 +36,7 @@
 - [x] `UITextView` 链式属性、占位符、限制输入字数、高度根据内容自动变化等
 - [x] `UITextField` 链式属性、左右视图、文本格式化等
 - [x] `UIDatePicker` 链式属性 
+- [x]  `UIProgressView` 链式属性 
 
 ## 安装方式 
 
