@@ -56,8 +56,10 @@ extension KcPrefixWrapper where Base: UIColor {
         return (CGFloat(r * 255.0), CGFloat(g * 255.0), CGFloat(b * 255.0))
     }
     
-    /// 转 十六进制字符串
-    public func toHexString() -> String? {
+    /// 转 十六进制字符串 默认字符串大写
+    /// - Parameter isUpper: 是否字母大写
+    /// - Returns: 十六进制字符串
+    public func toHexString(_ isUpper: Bool = true) -> String? {
         var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0;
         guard base.getRed(&red, green: &green, blue: &blue, alpha: &alpha) else {
             return nil
@@ -65,14 +67,14 @@ extension KcPrefixWrapper where Base: UIColor {
         let ratio = CGFloat(255.999999)
         if alpha == 1.0 {
             return String(
-                format: "#%02lx%02lx%02lx",
+                format: isUpper ? "#%02lX%02lX%02lX" : "#%02lx%02lx%02lx",
                 Int(red*ratio),
                 Int(green*ratio),
                 Int(blue*ratio)
             )
         }else {
             return String(
-                format: "#%02lx%02lx%02lx%02lx",
+                format: isUpper ? "#%02lX%02lX%02lX" : "#%02lx%02lx%02lx%02lx",
                 Int(red*ratio),
                 Int(green*ratio),
                 Int(blue*ratio),

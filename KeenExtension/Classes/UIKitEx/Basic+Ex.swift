@@ -144,7 +144,7 @@ extension KcPrefixWrapper where Base == Int {
     /// 是否为偶数
     public var isEvenNum: Bool { base % 2 == 0 }
     /// 十六进制整型转十六进制字符串
-    public var hexString: String { String(base, radix: 16, uppercase: true) }
+    public var toHexString: String { String(base, radix: 16, uppercase: true) }
 }
 
 //MARK: - Double 扩展
