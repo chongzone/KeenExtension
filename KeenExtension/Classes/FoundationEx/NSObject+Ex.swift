@@ -92,11 +92,11 @@ extension KcPrefixWrapper where Base: NSObject {
         let origianlClassMethod = class_getClassMethod(cls, originalSelector)
         let replaceClassMethod = class_getClassMethod(cls, replaceSelector)
         guard let oriMethod = origianlClassMethod as Method? else {
-            print("原始方法没找到")
+            kclog("原始方法没找到")
             return false
         }
         guard let repMethod = replaceClassMethod as Method? else {
-            print("交换的方法没找到")
+            kclog("交换的方法没找到")
             return false
         }
         let replaceImp = method_getImplementation(repMethod)
@@ -130,11 +130,11 @@ extension KcPrefixWrapper where Base: NSObject {
         let origianlInstanceMethod = class_getInstanceMethod(cls, originalSelector)
         let replaceInstanceMethod = class_getInstanceMethod(cls, replaceSelector)
         guard let oriMethod = origianlInstanceMethod as Method? else {
-            print("原始方法没找到")
+            kclog("原始方法没找到")
             return false
         }
         guard let repMethod = replaceInstanceMethod as Method? else {
-            print("交换的方法没找到")
+            kclog("交换的方法没找到")
             return false
         }
         let replaceImp = method_getImplementation(repMethod)

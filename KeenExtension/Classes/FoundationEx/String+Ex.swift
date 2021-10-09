@@ -758,7 +758,7 @@ extension KcPrefixWrapper where Base == String {
             )
             return result
         } catch {
-            print(error)
+            kclog(error.localizedDescription)
         }
         return ""
     }

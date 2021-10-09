@@ -1087,7 +1087,7 @@ extension KcPrefixWrapper where Base: UIImage {
         /// 遍历全部的面部
         var views: Array = [UIView]()
         for faceFeature in faceFeatures {
-            print(faceFeature)
+            kclog(faceFeature)
             var faceBounds = faceFeature.bounds.applying(transform)
             /// 处理缩放和偏移量
             let scale = min(base.size.width/inputImageSize.width, base.size.height/inputImageSize.height)

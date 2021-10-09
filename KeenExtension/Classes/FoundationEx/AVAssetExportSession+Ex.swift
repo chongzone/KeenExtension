@@ -49,7 +49,7 @@ extension KcPrefixWrapper where Base: AVAssetExportSession {
                     FileManager.kc.fileSize(at: outputPath)
                 )
             case .waiting, .exporting, .cancelled, .failed:
-                print(exportSession.error?.localizedDescription ?? "")
+                kclog(exportSession.error?.localizedDescription ?? "")
                 fallthrough
             case .unknown:
                 callback(exportSession, duration, "")

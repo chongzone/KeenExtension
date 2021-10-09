@@ -2,7 +2,7 @@
 
 ![CI Status](https://img.shields.io/travis/chongzone/KeenExtension.svg?style=flat)
 ![](https://img.shields.io/badge/swift-5.0%2B-orange.svg?style=flat)
-![](https://img.shields.io/badge/pod-v1.0.8-brightgreen.svg?style=flat)
+![](https://img.shields.io/badge/pod-v1.0.9-brightgreen.svg?style=flat)
 ![](https://img.shields.io/badge/platform-iOS-orange.svg?style=flat)
 ![](https://img.shields.io/badge/license-MIT-blue.svg)
 
@@ -32,7 +32,7 @@
 - [x] `UILabel` 链式属性、富文本设置、获取文本大小等 
 - [x] `UIControl` 链式属性、事件点击、扩大响应区域等 
 - [x] `UIButton` 链式属性、按钮图片、文字的几种布局等 
-- [x] `UIView` 链式属性、形变、阴影圆角、截屏、事件点击、常见的动画等
+- [x] `UIView` 链式属性、形变、阴影圆角、截屏、事件点击、添加手势事件、常见的动画等
 - [x] `UITextView` 链式属性、占位符、限制输入字数、高度根据内容自动变化等
 - [x] `UITextField` 链式属性、左右视图、文本格式化等
 - [x] `UIImageView`  `UIDatePicker`  `UIProgressView`  链式属性 
@@ -43,6 +43,7 @@
 - [x] `UIBarButtonItem` 初始化 `item` 等
 - [x] `UINavigationBar` 链式属性、导航栏下划线、标题属性、左右 `item` 属性等
 - [x] `UIViewController` 链式属性、是否模态、返回指定控制器、跳转到指定控制器、栈顶控制器等
+- [x] `UIGestureRecognizer` 链式属性、手势事件等扩展  
 
 ## 安装方式 
 

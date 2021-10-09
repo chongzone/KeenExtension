@@ -216,6 +216,32 @@ extension UIView {
         return self
     }
     
+    /// 背景色 默认图片拉伸且不失真
+    /// - Parameters:
+    ///   - imageName: 图片名称
+    ///   - model: 图片模式 默认拉伸
+    ///   - undistorted: 是否不失真
+    /// - Returns: 自身
+    @discardableResult
+    func backColor(
+        _ imageName: String,
+        model: UIImage.ResizingMode = .stretch,
+        undistorted: Bool = true
+    ) -> Self {
+        if model == .stretch {
+            if undistorted {
+                let ratio = .screenWidth / .screenHeight
+                let image = UIImage(named:imageName)?.kc.imageCrop(at: ratio)
+                layer.contents = image?.cgImage
+            }else {
+                layer.contents = UIImage(named:imageName)?.cgImage
+            }
+        }else {
+            backgroundColor = UIColor(image: UIImage(named: imageName)!)
+        }
+        return self
+    }
+    
     /// tag 值
     /// - Parameter tag: tag 值
     /// - Returns: 自身
@@ -349,6 +375,24 @@ extension UIView {
     @discardableResult
     public func tintColor(_ hexString: String) -> Self {
         tintColor = UIColor.kc.color(hexString: hexString)
+        return self
+    }
+    
+    /// 是否允许多点触摸
+    /// - Parameter enable: 是否允许
+    /// - Returns: 自身
+    @discardableResult
+    public func isMultipleTouchEnabled(_ enable: Bool) -> Self {
+        isMultipleTouchEnabled = enable
+        return self
+    }
+    
+    /// 事件间是否排斥
+    /// - Parameter enable: 是否排斥
+    /// - Returns: 自身
+    @discardableResult
+    public func isExclusiveTouch(_ enable: Bool) -> Self {
+        isExclusiveTouch = enable
         return self
     }
     
@@ -1058,5 +1102,130 @@ fileprivate extension UIView {
         static var associatedInterval: Void?
         static var associatedTapAction: Void?
         static var associatedTapGesture: Void?
+    }
+}
+
+//MARK: - 添加手势
+extension KcPrefixWrapper where Base: UIView {
+    
+    /// 单击手势
+    /// - Parameter action: 事件
+    public func addTap(_ action: @escaping (UITapGestureRecognizer) -> Void) {
+        UITapGestureRecognizer()
+            .addGestureTo(base)
+            .kc.addGesture { gesture in
+                action(gesture as! UITapGestureRecognizer)
+            }
+        base.isUserInteractionEnabled(true)
+            .isMultipleTouchEnabled(true)
+    }
+    
+    /// 长按手势 长按时长默认 0.5
+    /// - Parameters:
+    ///   - duration: 长按时间
+    ///   - action: 事件
+    public func addLongPress(
+        _ duration: TimeInterval = 0.5,
+        _ action: @escaping (UILongPressGestureRecognizer) -> Void
+    ) {
+        UILongPressGestureRecognizer()
+            .minimumPressDuration(duration)
+            .addGestureTo(base)
+            .kc.addGesture { gesture in
+                action(gesture as! UILongPressGestureRecognizer)
+            }
+        base.isUserInteractionEnabled(true)
+            .isMultipleTouchEnabled(true)
+    }
+    
+    /// 拖拽手势 最大触摸手指数 2
+    /// - Parameter action: 事件
+    public func addPan(_ action: @escaping (UIPanGestureRecognizer) -> Void) {
+        UIPanGestureRecognizer()
+            .maximumNumberOfTouches(2)
+            .kc.addGesture { gesture in
+                if let sender = gesture as? UIPanGestureRecognizer,
+                   let senderView = sender.view {
+                    let translate: CGPoint = sender.translation(in: senderView.superview)
+                    senderView.center = CGPoint(
+                        x: senderView.center.x + translate.x,
+                        y: senderView.center.y + translate.y
+                    )
+                    sender.setTranslation(.zero, in: senderView.superview)
+                    action(gesture as! UIPanGestureRecognizer)
+                }
+            }
+        base.isUserInteractionEnabled(true)
+            .isMultipleTouchEnabled(true)
+    }
+    
+    /// 清扫手势 默认向右清扫
+    /// - Parameters:
+    ///   - action: 事件
+    ///   - direction: 清扫方向
+    public func addSwip(
+        _ action: @escaping (UISwipeGestureRecognizer) -> Void,
+        direction: UISwipeGestureRecognizer.Direction = .right
+    ) {
+        UISwipeGestureRecognizer()
+            .direction(direction)
+            .kc.addGesture { gesture in
+                action(gesture as! UISwipeGestureRecognizer)
+            }
+        base.isUserInteractionEnabled(true)
+            .isMultipleTouchEnabled(true)
+    }
+    
+    /// 捏合手势
+    /// - Parameter action: 事件
+    public func addPinch(_ action: @escaping (UIPinchGestureRecognizer) -> Void) {
+        UIPinchGestureRecognizer()
+            .addGestureTo(base)
+            .kc.addGesture { gesture in
+                if let sender = gesture as? UIPinchGestureRecognizer {
+                    let location = gesture.location(in: sender.view!.superview)
+                    let view = sender.view!
+                    view.center = location
+                    view.transform = view.transform.scaledBy(x: sender.scale, y: sender.scale)
+                    sender.scale = 1.0
+                    action(gesture as! UIPinchGestureRecognizer)
+                }
+            }
+        base.isUserInteractionEnabled(true)
+            .isMultipleTouchEnabled(true)
+    }
+    
+    /// 旋转手势
+    /// - Parameter action: 事件
+    public func addRotation(_ action: @escaping (UIRotationGestureRecognizer) -> Void) {
+        UIRotationGestureRecognizer()
+            .addGestureTo(base)
+            .kc.addGesture { gesture in
+                if let sender = gesture as? UIRotationGestureRecognizer {
+                    sender.view!.transform = sender.view!.transform.rotated(by: sender.rotation)
+                    sender.rotation = 0.0
+                    action(gesture as! UIRotationGestureRecognizer)
+                }
+            }
+        base.isUserInteractionEnabled(true)
+            .isMultipleTouchEnabled(true)
+    }
+    
+    /// 清扫屏幕边缘手势
+    /// - Parameters:
+    ///   - action: 事件
+    ///   - edgs: 边缘位置
+    public func addEdge(
+        _ action: @escaping (UIScreenEdgePanGestureRecognizer) -> Void,
+        edgs: UIRectEdge
+    ) {
+        UIScreenEdgePanGestureRecognizer()
+            .edges(edgs)
+            .addGestureTo(base)
+            .kc.addGesture { gesture in
+                action(gesture as! UIScreenEdgePanGestureRecognizer)
+            }
+        base.isUserInteractionEnabled(true)
+            .isMultipleTouchEnabled(true)
     }
 }

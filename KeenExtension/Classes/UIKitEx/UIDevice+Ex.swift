@@ -81,7 +81,7 @@ extension KcPrefixWrapper where Base: UIDevice {
             try FileManager.default.removeItem(atPath: path)
             return true
         } catch {
-            print(error.localizedDescription)
+            kclog(error.localizedDescription)
         }
         return false
     }
