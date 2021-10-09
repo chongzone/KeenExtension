@@ -2,7 +2,7 @@
 
 ![CI Status](https://img.shields.io/travis/chongzone/KeenExtension.svg?style=flat)
 ![](https://img.shields.io/badge/swift-5.0%2B-orange.svg?style=flat)
-![](https://img.shields.io/badge/pod-v1.0.7-brightgreen.svg?style=flat)
+![](https://img.shields.io/badge/pod-v1.0.8-brightgreen.svg?style=flat)
 ![](https://img.shields.io/badge/platform-iOS-orange.svg?style=flat)
 ![](https://img.shields.io/badge/license-MIT-blue.svg)
 
@@ -40,6 +40,9 @@
 - [x] `UIScrollView` 链式属性、适配 `iOS11` 以上、滚动事件等 
 - [x] `UITableView` 链式属性、适配 `iOS11` 以上、初始化扩展等 
 - [x] `UICollectionView` 链式属性、初始化扩展等
+- [x] `UIBarButtonItem` 初始化 `item` 等
+- [x] `UINavigationBar` 链式属性、导航栏下划线、标题属性、左右 `item` 属性等
+- [x] `UIViewController` 链式属性、是否模态、返回指定控制器、跳转到指定控制器、栈顶控制器等
 
 ## 安装方式 
 
