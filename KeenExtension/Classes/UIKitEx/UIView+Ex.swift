@@ -46,16 +46,24 @@ extension UIView {
 extension UIView {
     
     /// 初始化
+    /// - Parameters:
+    ///   - origin: origin 点
+    ///   - size: size 大小
     public convenience init(origin: CGPoint, size: CGSize) {
         self.init(frame: CGRect(origin: origin, size: size))
     }
     
     /// 初始化
+    /// - Parameters:
+    ///   - x: x 坐标
+    ///   - y: y 坐标
+    ///   - width: 宽度大小
+    ///   - height: 高度大小
     public convenience init(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat) {
         self.init(frame: CGRect(x: x, y: y, width: width, height: height))
     }
     
-    /// 初始化
+    /// 初始化 默认内边距 0
     /// - Parameters:
     ///   - superView: 父视图
     ///   - padding: 内边距
