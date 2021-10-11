@@ -2,13 +2,13 @@
 
 ![CI Status](https://img.shields.io/travis/chongzone/KeenExtension.svg?style=flat)
 ![](https://img.shields.io/badge/swift-5.0%2B-orange.svg?style=flat)
-![](https://img.shields.io/badge/pod-v1.0.9-brightgreen.svg?style=flat)
+![](https://img.shields.io/badge/pod-v1.1.0-brightgreen.svg?style=flat)
 ![](https://img.shields.io/badge/platform-iOS-orange.svg?style=flat)
 ![](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## 功能介绍
 
-#### `Foundation` 系统库
+### `Foundation` 系统库
 - [x] `Array` 添加元素、转化字符串
 - [x] `Dictionary` 索引、转化字符串
 - [x] `Collection` 集合类取值防越界处理 
@@ -23,7 +23,7 @@
 - [x] `FileManager` 文件路径、文件的读写拷贝移动、文件大小、属性等
 - [x] `AVAssetExportSession` 本地视频压缩
 
-#### `UIKit` 系统库
+### `UIKit` 系统库
 - [x] 基本类型转换、视觉适配等
 - [x] `UIDevice` 设备信息、磁盘容量等
 - [x] `UIFont` 字体获取、常见的视觉字体等
@@ -44,6 +44,9 @@
 - [x] `UINavigationBar` 链式属性、导航栏下划线、标题属性、左右 `item` 属性等
 - [x] `UIViewController` 链式属性、是否模态、返回指定控制器、跳转到指定控制器、栈顶控制器等
 - [x] `UIGestureRecognizer` 链式属性、手势事件等扩展  
+
+### `Utils` 文件
+- [x] 命名空间、日志输出等
 
 ## 安装方式 
 

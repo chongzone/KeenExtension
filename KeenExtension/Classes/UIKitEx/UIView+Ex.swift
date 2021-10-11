@@ -488,6 +488,9 @@ extension KcPrefixWrapper where Base: UIView {
         return nil
     }
     
+    /// 隐藏键盘
+    public func keyboardEndEditing() { base.endEditing(true) }
+    
     /// 自适应宽度
     public func resizeToFitWidth() {
         let currentH = height

@@ -96,6 +96,17 @@ extension UIButton {
         return self
     }
     
+    /// 按钮背景色 状态默认 normal
+    /// - Parameters:
+    ///   - color: 背景色
+    ///   - state: 状态
+    /// - Returns: 自身
+    @discardableResult
+    public func backColor(_ color: UIColor, _ state: UIControl.State = .normal) -> Self {
+        setBackgroundImage(UIImage.kc.image(color: color), for: state)
+        return self
+    }
+    
     /// 按钮背景图片 状态默认 normal
     /// - Parameters:
     ///   - image: 图片

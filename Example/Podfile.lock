@@ -1,5 +1,5 @@
 PODS:
-  - KeenExtension (1.0.9)
+  - KeenExtension (1.1.0)
 
 DEPENDENCIES:
   - KeenExtension (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KeenExtension: 8686aae5605a52cda8d44d7b27aa8822f20f6f68
+  KeenExtension: dc4533a5886a8b30cbc7f6bf5550a02f8a5b6b74
 
 PODFILE CHECKSUM: 532a7e7848b94c260ceb3dff35527b718fdcd1db
 
