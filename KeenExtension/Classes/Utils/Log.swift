@@ -17,8 +17,11 @@ public func kclog(
     let logMsg = {
         var str: String = ""
         msg.forEach { str += "\($0)" + " " }
-        let date = Date.kc.dateToString(Date())
-        let fnPath = file.lastPathComponent.kc.split(".").first! + ":\(fn):\(line)"
+        let formatter = DateFormatter()
+        formatter.locale = Locale.init(identifier: "zh-CN")
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let date = formatter.string(from: Date())
+        let fnPath = file.lastPathComponent.components(separatedBy: ".").first! + ":\(fn):\(line)"
         print(date, fnPath, str)
     }
     assert({ logMsg(); return true }(), "")
