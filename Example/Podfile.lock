@@ -1,15 +1,29 @@
 PODS:
-  - KeenExtension (1.1.0)
+  - KeenExtension (1.2.0):
+    - KeenExtension/Extensions (= 1.2.0)
+    - KeenExtension/SnapKitEx (= 1.2.0)
+    - KeenExtension/Utils (= 1.2.0)
+  - KeenExtension/Extensions (1.2.0):
+    - KeenExtension/Utils
+  - KeenExtension/SnapKitEx (1.2.0):
+    - SnapKit
+  - KeenExtension/Utils (1.2.0)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - KeenExtension (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SnapKit
 
 EXTERNAL SOURCES:
   KeenExtension:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KeenExtension: dc4533a5886a8b30cbc7f6bf5550a02f8a5b6b74
+  KeenExtension: fe3770b6dc52912cceb448bc0f6a564eb6e7360d
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
 PODFILE CHECKSUM: 532a7e7848b94c260ceb3dff35527b718fdcd1db
 

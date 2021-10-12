@@ -2,13 +2,31 @@
 
 ![CI Status](https://img.shields.io/travis/chongzone/KeenExtension.svg?style=flat)
 ![](https://img.shields.io/badge/swift-5.0%2B-orange.svg?style=flat)
-![](https://img.shields.io/badge/pod-v1.1.0-brightgreen.svg?style=flat)
+![](https://img.shields.io/badge/pod-v1.2.0-brightgreen.svg?style=flat)
 ![](https://img.shields.io/badge/platform-iOS-orange.svg?style=flat)
 ![](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## 功能介绍
 
-### `Foundation` 系统库
+### 文件结构
+
+```ruby
+KeenExtension
+├── Assets
+└── Classes
+    ├── Extensions
+    │   ├── FoundationEx
+    │   └── UIKitEx
+    ├── SnapKitEx
+    │   └── SnapKit+Ex.swift
+    └── Utils
+        ├── KcPrefixWrapper.swift
+        └── Log.swift
+```
+
+### `Extensions` 文件
+
+#### `Foundation` 系统库
 - [x] `Array` 添加元素、转化字符串
 - [x] `Dictionary` 索引、转化字符串
 - [x] `Collection` 集合类取值防越界处理 
@@ -23,7 +41,7 @@
 - [x] `FileManager` 文件路径、文件的读写拷贝移动、文件大小、属性等
 - [x] `AVAssetExportSession` 本地视频压缩
 
-### `UIKit` 系统库
+#### `UIKit` 系统库
 - [x] 基本类型转换、视觉适配等
 - [x] `UIDevice` 设备信息、磁盘容量等
 - [x] `UIFont` 字体获取、常见的视觉字体等
@@ -45,6 +63,9 @@
 - [x] `UIViewController` 链式属性、是否模态、返回指定控制器、跳转到指定控制器、栈顶控制器等
 - [x] `UIGestureRecognizer` 链式属性、手势事件等扩展  
 
+### `SnapKitEx` 文件
+- [x] `SnapKit` 对数组的扩展，针对数组控件等间隔、等宽高、九空格等不同场景下的布局 
+
 ### `Utils` 文件
 - [x] 命名空间、日志输出等
 
@@ -58,7 +79,14 @@ use_frameworks!
 
 target 'TargetName' do
 
+# 下载所有的库文件
 pod 'KeenExtension'
+
+# 仅下载系统库控件的扩展
+# pod 'KeenExtension', :subspecs => ['Extensions']
+
+# 仅下载 SnapKit 对数组的支持
+# pod 'KeenExtension', :subspecs => ['SnapKitEx']
 
 end
 ```
