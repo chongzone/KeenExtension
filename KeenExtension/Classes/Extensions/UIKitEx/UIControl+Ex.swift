@@ -107,7 +107,7 @@ extension UIControl {
 }
 
 //MARK: - 点击事件
-extension KcPrefixWrapper where Base: UIControl {
+extension UIControl {
     
     /// Control 事件点击 默认响应间隔 1.0s
     /// - Parameters:
@@ -124,13 +124,13 @@ extension KcPrefixWrapper where Base: UIControl {
     ) {
         objc_setAssociatedObject(
             self,
-            &Base.AssociatedKey.associatedClickAction,
+            &AssociatedKey.associatedClickAction,
             action,
             .OBJC_ASSOCIATION_COPY_NONATOMIC
         )
-        base.clickInterval = interval
-        base.isExclusiveTouch = isExclusion
-        base.addTarget(base, action: #selector(base.clickAction(_ :)), for: event)
+        isExclusiveTouch(isExclusion)
+            .clickInterval = interval
+        addTarget(self, action: #selector(clickAction(_ :)), for: event)
     }
 }
 
@@ -139,11 +139,11 @@ fileprivate extension UIControl {
     @objc func clickAction(_ control: UIControl) {
         if Date().timeIntervalSince1970 - clickLastTime < clickInterval { return }
         clickLastTime = Date().timeIntervalSince1970
-        if let action = objc_getAssociatedObject(
+        if let clickEvent = objc_getAssociatedObject(
             self,
             &AssociatedKey.associatedClickAction
         ) as? ((UIControl) -> ()) {
-            action(control)
+            clickEvent(control)
         }
     }
     

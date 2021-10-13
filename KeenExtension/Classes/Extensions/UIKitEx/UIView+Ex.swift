@@ -1007,7 +1007,7 @@ extension KcPrefixWrapper where Base: UIView {
 }
 
 //MARK: - 点击事件
-extension KcPrefixWrapper where Base: UIView {
+extension UIView {
     
     /// View 事件点击  默认响应间隔 1.0s
     /// - Parameters:
@@ -1020,29 +1020,17 @@ extension KcPrefixWrapper where Base: UIView {
         _ action: @escaping (() -> ()),
         interval: TimeInterval = 1.0,
         isExclusion: Bool = true) {
-        var gesture = objc_getAssociatedObject(
-            self,
-            &Base.AssociatedKey.associatedTapGesture
-        )
-        if gesture == nil {
-            gesture = UITapGestureRecognizer(
-                target: self,
-                action: #selector(base.clickMethod(_:))
-            )
-            base.addGestureRecognizer(gesture as! UIGestureRecognizer)
-            objc_setAssociatedObject(
-                self,
-                &Base.AssociatedKey.associatedTapGesture,
-                gesture,
-                .OBJC_ASSOCIATION_RETAIN_NONATOMIC
-            )
-        }
-        base.clickInterval = interval
-        base.isExclusiveTouch = isExclusion
-        base.isUserInteractionEnabled = true
+        UITapGestureRecognizer()
+            .addGestureTo(self)
+            .addGesture { gesture in
+                self.clickMethod(gesture as! UITapGestureRecognizer, action: action)
+            }
+        self.isUserInteractionEnabled(true)
+            .isExclusiveTouch(isExclusion)
+            .clickInterval = interval
         objc_setAssociatedObject(
             self,
-            &Base.AssociatedKey.associatedTapAction,
+            &AssociatedKey.associatedTapAction,
             action,
             .OBJC_ASSOCIATION_COPY_NONATOMIC
         )
@@ -1051,14 +1039,17 @@ extension KcPrefixWrapper where Base: UIView {
 
 fileprivate extension UIView {
     
-    @objc func clickMethod(_ gesture: UITapGestureRecognizer) {
+    @objc func clickMethod(
+        _ gesture: UITapGestureRecognizer,
+        action: @escaping (() -> ())
+    ) {
         if Date().timeIntervalSince1970 - clickLastTime < clickInterval { return }
         clickLastTime = Date().timeIntervalSince1970
         if gesture.state == .recognized {
             if let clickEvent = objc_getAssociatedObject(
                 self,
                 &AssociatedKey.associatedTapAction
-            ) as? (() -> (Void)) {
+            ) as? (() -> ()) {
                 clickEvent()
             }
         }
@@ -1116,7 +1107,7 @@ extension KcPrefixWrapper where Base: UIView {
     public func addTap(_ action: @escaping (UITapGestureRecognizer) -> Void) {
         UITapGestureRecognizer()
             .addGestureTo(base)
-            .kc.addGesture { gesture in
+            .addGesture { gesture in
                 action(gesture as! UITapGestureRecognizer)
             }
         base.isUserInteractionEnabled(true)
@@ -1134,7 +1125,7 @@ extension KcPrefixWrapper where Base: UIView {
         UILongPressGestureRecognizer()
             .minimumPressDuration(duration)
             .addGestureTo(base)
-            .kc.addGesture { gesture in
+            .addGesture { gesture in
                 action(gesture as! UILongPressGestureRecognizer)
             }
         base.isUserInteractionEnabled(true)
@@ -1146,7 +1137,8 @@ extension KcPrefixWrapper where Base: UIView {
     public func addPan(_ action: @escaping (UIPanGestureRecognizer) -> Void) {
         UIPanGestureRecognizer()
             .maximumNumberOfTouches(2)
-            .kc.addGesture { gesture in
+            .addGestureTo(base)
+            .addGesture { gesture in
                 if let sender = gesture as? UIPanGestureRecognizer,
                    let senderView = sender.view {
                     let translate: CGPoint = sender.translation(in: senderView.superview)
@@ -1172,7 +1164,8 @@ extension KcPrefixWrapper where Base: UIView {
     ) {
         UISwipeGestureRecognizer()
             .direction(direction)
-            .kc.addGesture { gesture in
+            .addGestureTo(base)
+            .addGesture { gesture in
                 action(gesture as! UISwipeGestureRecognizer)
             }
         base.isUserInteractionEnabled(true)
@@ -1184,7 +1177,7 @@ extension KcPrefixWrapper where Base: UIView {
     public func addPinch(_ action: @escaping (UIPinchGestureRecognizer) -> Void) {
         UIPinchGestureRecognizer()
             .addGestureTo(base)
-            .kc.addGesture { gesture in
+            .addGesture { gesture in
                 if let sender = gesture as? UIPinchGestureRecognizer {
                     let location = gesture.location(in: sender.view!.superview)
                     let view = sender.view!
@@ -1203,7 +1196,7 @@ extension KcPrefixWrapper where Base: UIView {
     public func addRotation(_ action: @escaping (UIRotationGestureRecognizer) -> Void) {
         UIRotationGestureRecognizer()
             .addGestureTo(base)
-            .kc.addGesture { gesture in
+            .addGesture { gesture in
                 if let sender = gesture as? UIRotationGestureRecognizer {
                     sender.view!.transform = sender.view!.transform.rotated(by: sender.rotation)
                     sender.rotation = 0.0
@@ -1225,7 +1218,7 @@ extension KcPrefixWrapper where Base: UIView {
         UIScreenEdgePanGestureRecognizer()
             .edges(edgs)
             .addGestureTo(base)
-            .kc.addGesture { gesture in
+            .addGesture { gesture in
                 action(gesture as! UIScreenEdgePanGestureRecognizer)
             }
         base.isUserInteractionEnabled(true)

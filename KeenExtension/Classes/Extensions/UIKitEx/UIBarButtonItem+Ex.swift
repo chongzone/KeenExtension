@@ -155,7 +155,7 @@ extension UIBarButtonItem {
         if let disableImgName = disableImageName {
             btn.image(UIImage(named: disableImgName), .disabled)
         }
-        btn.kc.clickEvent(
+        btn.clickEvent(
             .touchUpInside,
             { action($0 as! UIButton) },
             interval: 0.5,

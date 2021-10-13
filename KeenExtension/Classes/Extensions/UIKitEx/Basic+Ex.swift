@@ -164,6 +164,10 @@ extension KcPrefixWrapper where Base == Double {
     public var toString: String { String(base) }
     /// 是否为偶数
     public var isEvenNum: Bool { base.truncatingRemainder(dividingBy: 2.0) == 0 }
+    /// 取余
+    public func remainder(by value: Double) -> Double {
+        return base.truncatingRemainder(dividingBy: value)
+    }
     /// 取中心点
     public func mid(_ value: Double) -> Double { (base + value) * 0.5 }
 }
@@ -185,6 +189,10 @@ extension KcPrefixWrapper where Base == Float {
     public var toString: String { String(base) }
     /// 是否为偶数
     public var isEvenNum: Bool { base.truncatingRemainder(dividingBy: 2.0) == 0 }
+    /// 取余
+    public func remainder(by value: Float) -> Float {
+        return base.truncatingRemainder(dividingBy: value)
+    }
     /// 取中心点
     public func mid(_ value: Float) -> Float { (base + value) * 0.5 }
 }
@@ -210,6 +218,10 @@ extension KcPrefixWrapper where Base == CGFloat {
     public var toAngle: CGFloat { (base * 180.0) / .pi }
     /// 是否为偶数
     public var isEvenNum: Bool { base.truncatingRemainder(dividingBy: 2.0) == 0 }
+    /// 取余
+    public func remainder(by value: CGFloat) -> CGFloat {
+        return base.truncatingRemainder(dividingBy: value)
+    }
     /// 取中心点
     public func mid(_ value: CGFloat) -> CGFloat { (base + value) * 0.5 }
 }

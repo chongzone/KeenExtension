@@ -223,13 +223,14 @@ extension UIScreenEdgePanGestureRecognizer {
 }
 
 //MARK: - 手势事件
-extension KcPrefixWrapper where Base: UIGestureRecognizer {
+extension UIGestureRecognizer {
     
+    /// 添加手势事件
     public func addGesture(_ action: @escaping (UIGestureRecognizer) -> Void) {
-        base.addTarget(self, action: #selector(base.clickGesture))
+        addTarget(self, action: #selector(self.clickGesture))
         objc_setAssociatedObject(
             self,
-            &Base.AssociatedKey.associatedGestureEvent,
+            &AssociatedKey.associatedGestureEvent,
             action,
             .OBJC_ASSOCIATION_COPY_NONATOMIC
         )
