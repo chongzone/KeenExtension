@@ -32,6 +32,19 @@ extension UIButton {
         return self
     }
     
+    /// 按钮文字
+    /// - Parameters:
+    ///   - title: 文案
+    ///   - state1: 状态 1
+    ///   - state2: 状态 2
+    /// - Returns: 自身
+    @discardableResult
+    public func title(_ title: String?, _ state1: UIControl.State, _ state2: UIControl.State) -> Self {
+        setTitle(title, for: state1)
+        setTitle(title, for: state2)
+        return self
+    }
+    
     /// 按钮富文本 状态默认 normal
     /// - Parameters:
     ///   - title: 文案
@@ -40,6 +53,19 @@ extension UIButton {
     @discardableResult
     public func title(_ title: NSAttributedString?, _ state: UIControl.State = .normal) -> Self {
         setAttributedTitle(title, for: state)
+        return self
+    }
+    
+    /// 按钮富文本
+    /// - Parameters:
+    ///   - title: 文案
+    ///   - state1: 状态 1
+    ///   - state2: 状态 2
+    /// - Returns: 自身
+    @discardableResult
+    public func title(_ title: NSAttributedString?, _ state1: UIControl.State, _ state2: UIControl.State) -> Self {
+        setAttributedTitle(title, for: state1)
+        setAttributedTitle(title, for: state2)
         return self
     }
     
@@ -74,6 +100,19 @@ extension UIButton {
         return self
     }
     
+    /// 按钮文字颜色
+    /// - Parameters:
+    ///   - color: 文案颜色
+    ///   - state1: 状态 1
+    ///   - state2: 状态 2
+    /// - Returns: 自身
+    @discardableResult
+    public func titleColor(_ color: UIColor, _ state1: UIControl.State, _ state2: UIControl.State) -> Self {
+        setTitleColor(color, for: state1)
+        setTitleColor(color, for: state2)
+        return self
+    }
+    
     /// 按钮文字阴影色 状态默认 normal
     /// - Parameters:
     ///   - color: 阴影色
@@ -82,6 +121,19 @@ extension UIButton {
     @discardableResult
     public func shadowColor(_ color: UIColor, _ state: UIControl.State = .normal) -> Self {
         setTitleShadowColor(color, for: state)
+        return self
+    }
+    
+    /// 按钮文字阴影色
+    /// - Parameters:
+    ///   - color: 阴影色
+    ///   - state2: 状态 1
+    ///   - state2: 状态 2
+    /// - Returns: 自身
+    @discardableResult
+    public func shadowColor(_ color: UIColor, _ state1: UIControl.State, _ state2: UIControl.State) -> Self {
+        setTitleShadowColor(color, for: state1)
+        setTitleShadowColor(color, for: state2)
         return self
     }
     
@@ -96,6 +148,19 @@ extension UIButton {
         return self
     }
     
+    /// 按钮图片
+    /// - Parameters:
+    ///   - image: 图片
+    ///   - state1: 状态 1
+    ///   - state2: 状态 2
+    /// - Returns: 自身
+    @discardableResult
+    public func image(_ image: UIImage?, _ state1: UIControl.State, _ state2: UIControl.State) -> Self {
+        setImage(image, for: state1)
+        setImage(image, for: state2)
+        return self
+    }
+    
     /// 按钮背景色 状态默认 normal
     /// - Parameters:
     ///   - color: 背景色
@@ -107,6 +172,19 @@ extension UIButton {
         return self
     }
     
+    /// 按钮背景色
+    /// - Parameters:
+    ///   - color: 背景色
+    ///   - state1: 状态 1
+    ///   - state2: 状态 2
+    /// - Returns: 自身
+    @discardableResult
+    public func backColor(_ color: UIColor, _ state1: UIControl.State, _ state2: UIControl.State) -> Self {
+        setBackgroundImage(UIImage.kc.image(color: color), for: state1)
+        setBackgroundImage(UIImage.kc.image(color: color), for: state2)
+        return self
+    }
+    
     /// 按钮背景图片 状态默认 normal
     /// - Parameters:
     ///   - image: 图片
@@ -115,6 +193,19 @@ extension UIButton {
     @discardableResult
     public func backImage(_ image: UIImage?, _ state: UIControl.State = .normal) -> Self {
         setBackgroundImage(image, for: state)
+        return self
+    }
+    
+    /// 按钮背景图片
+    /// - Parameters:
+    ///   - image: 图片
+    ///   - state1: 状态 1
+    ///   - state2: 状态 2
+    /// - Returns: 自身
+    @discardableResult
+    public func backImage(_ image: UIImage?, _ state1: UIControl.State, _ state2: UIControl.State) -> Self {
+        setBackgroundImage(image, for: state1)
+        setBackgroundImage(image, for: state2)
         return self
     }
     
