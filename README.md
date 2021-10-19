@@ -2,7 +2,7 @@
 
 ![CI Status](https://img.shields.io/travis/chongzone/KeenExtension.svg?style=flat)
 ![](https://img.shields.io/badge/swift-5.0%2B-orange.svg?style=flat)
-![](https://img.shields.io/badge/pod-v1.2.2-brightgreen.svg?style=flat)
+![](https://img.shields.io/badge/pod-v1.2.3-brightgreen.svg?style=flat)
 ![](https://img.shields.io/badge/platform-iOS-orange.svg?style=flat)
 ![](https://img.shields.io/badge/license-MIT-blue.svg)
 
