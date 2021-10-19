@@ -92,6 +92,11 @@ end
 ```
 > `Swift` 版本要求 `5.0+`
 
+## Contact Me
+
+QQ: 2209868966
+邮箱: chongzone@163.com
+
 ## License
 
 KeenExtension is available under the MIT license. [See the LICENSE](https://github.com/chongzone/KeenExtension/blob/main/LICENSE) file for more info.

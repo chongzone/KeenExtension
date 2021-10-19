@@ -229,6 +229,19 @@ extension UIButton {
         return self
     }
     
+    /// 按钮文字内边距
+    /// - Parameters:
+    ///   - top: 顶部边距
+    ///   - left: 左边边距
+    ///   - bottom: 底部边距
+    ///   - right: 右边边距
+    /// - Returns: 自身
+    @discardableResult
+    public func titleEdgeInsets(top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat) -> Self {
+        titleEdgeInsets = UIEdgeInsets(top: top, left: left, bottom: bottom, right: right)
+        return self
+    }
+    
     /// 按钮图片内边距
     /// - Parameters:
     ///   - edge: 边距
@@ -236,6 +249,19 @@ extension UIButton {
     @discardableResult
     public func imageEdgeInsets(_ edge: UIEdgeInsets = .zero) -> Self {
         imageEdgeInsets = edge
+        return self
+    }
+    
+    /// 按钮图片内边距
+    /// - Parameters:
+    ///   - top: 顶部边距
+    ///   - left: 左边边距
+    ///   - bottom: 底部边距
+    ///   - right: 右边边距
+    /// - Returns: 自身
+    @discardableResult
+    public func imageEdgeInsets(top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat) -> Self {
+        imageEdgeInsets = UIEdgeInsets(top: top, left: left, bottom: bottom, right: right)
         return self
     }
     

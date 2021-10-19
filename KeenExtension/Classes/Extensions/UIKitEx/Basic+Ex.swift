@@ -269,6 +269,8 @@ extension CGFloat {
     public static var screenMinWidth: CGFloat { Swift.min(screenWidth, screenHeight) }
     /// 屏幕最大高度
     public static var screenMaxHeight: CGFloat { Swift.max(screenWidth, screenHeight) }
+    /// 键盘高度
+    public static var keyboardHeight: CGFloat { 216 + safeAreaBottomHeight * 2 }
     
     /// 安全区域导航栏高度
     public static var safeAreaNavBarHeight: CGFloat { statusBarHeight + 44.0 }
