@@ -2,7 +2,7 @@
 
 ![CI Status](https://img.shields.io/travis/chongzone/KeenExtension.svg?style=flat)
 ![](https://img.shields.io/badge/swift-5.0%2B-orange.svg?style=flat)
-![](https://img.shields.io/badge/pod-v1.2.3-brightgreen.svg?style=flat)
+![](https://img.shields.io/badge/pod-v1.2.4-brightgreen.svg?style=flat)
 ![](https://img.shields.io/badge/platform-iOS-orange.svg?style=flat)
 ![](https://img.shields.io/badge/license-MIT-blue.svg)
 
@@ -96,6 +96,8 @@ end
 
 QQ: 2209868966
 邮箱: chongzone@163.com
+
+> 若在使用过程中遇到什么问题, 请 `issues` 我, 看到之后会尽快修复 
 
 ## License
 

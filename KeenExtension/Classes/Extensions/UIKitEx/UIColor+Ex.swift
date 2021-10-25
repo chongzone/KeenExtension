@@ -17,21 +17,28 @@ extension UIColor {
     
     /// 初始化
     public convenience init(hexValue: Int, alpha: CGFloat = 1.0) {
-        let red = CGFloat((hexValue & 0xFF0000) >> 16) / 255
-        let green = CGFloat((hexValue & 0x00FF00) >> 8) / 255
-        let blue = CGFloat(hexValue & 0x0000FF) / 255
+        let red = CGFloat((hexValue & 0xFF0000) >> 16) / 255.0
+        let green = CGFloat((hexValue & 0x00FF00) >> 8) / 255.0
+        let blue = CGFloat(hexValue & 0x0000FF) / 255.0
         self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
     
     /// 初始化
     public convenience init(hexString: String, alpha: CGFloat = 1.0) {
-        let tuple = UIColor.self.kc.hexStringToRGB(hexString, alpha: alpha)
-        self.init(
-            red: tuple.red,
-            green: tuple.green,
-            blue: tuple.blue,
-            alpha: tuple.alpha
-        )
+        var hex = hexString.kc.trim().lowercased()
+        if hex.hasPrefix("#") {
+            hex = "\(hex.dropFirst())"
+        }
+        if hex.hasPrefix("0x") {
+            hex = "\(hexString.dropFirst(2))"
+        }
+        var hexValue: UInt64 = 0
+        let scanner: Scanner = Scanner(string: hexString)
+        scanner.scanHexInt64(&hexValue)
+        let red = CGFloat(Int(hexValue >> 16) & 0x0000FF) / 255.0
+        let green = CGFloat(Int(hexValue >> 8) & 0x0000FF) / 255.0
+        let blue = CGFloat(Int(hexValue) & 0x0000FF) / 255.0
+        self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
     
     /// 初始化
@@ -155,9 +162,9 @@ extension KcPrefixWrapper where Base: UIColor {
     /// - Returns: 对应的 Color
     public static func color(hexValue: Int, alpha: CGFloat = 1.0) -> UIColor {
         return UIColor(
-            red: CGFloat((hexValue & 0xFF0000) >> 16) / 255,
-            green: CGFloat((hexValue & 0x00FF00) >> 8) / 255,
-            blue: CGFloat(hexValue & 0x0000FF) / 255,
+            red: CGFloat((hexValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((hexValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(hexValue & 0x0000FF) / 255.0,
             alpha: alpha
         )
     }
@@ -168,12 +175,21 @@ extension KcPrefixWrapper where Base: UIColor {
     ///   - alpha: 透明度
     /// - Returns: 对应的 Color
     public static func color(hexString: String, alpha: CGFloat = 1.0) -> UIColor {
-        let tuple = UIColor.self.kc.hexStringToRGB(hexString, alpha: alpha)
+        var hex = hexString.kc.trim().lowercased()
+        if hex.hasPrefix("#") {
+            hex = "\(hex.dropFirst())"
+        }
+        if hex.hasPrefix("0x") {
+            hex = "\(hexString.dropFirst(2))"
+        }
+        var hexValue: UInt64 = 0
+        let scanner: Scanner = Scanner(string: hex)
+        scanner.scanHexInt64(&hexValue)
         return UIColor(
-            red: tuple.red,
-            green: tuple.green,
-            blue: tuple.blue,
-            alpha: tuple.alpha
+            red: CGFloat(Int(hexValue >> 16) & 0x0000FF) / 255.0,
+            green: CGFloat(Int(hexValue >> 8) & 0x0000FF) / 255.0,
+            blue: CGFloat(Int(hexValue) & 0x0000FF) / 255.0,
+            alpha: alpha
         )
     }
     
@@ -182,7 +198,7 @@ extension KcPrefixWrapper where Base: UIColor {
     ///   - hexString: 十六进制字符串
     ///   - alpha: 透明度
     /// - Returns: rgb 数据
-    fileprivate static func hexStringToRGB(
+    public static func hexStringToRGB(
         _ hexString: String,
         alpha: CGFloat
     ) -> (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {

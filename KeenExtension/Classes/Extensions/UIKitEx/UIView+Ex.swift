@@ -669,7 +669,7 @@ extension KcPrefixWrapper where Base: UIView {
         let subLayer = CALayer()
         subLayer.frame = rect
         subLayer.cornerRadius    = radius
-        subLayer.backgroundColor = shadowColor.cgColor
+        subLayer.backgroundColor = (base.backgroundColor ?? UIColor.white).cgColor
         subLayer.masksToBounds   = false
         subLayer.shadowColor     = shadowColor.cgColor
         subLayer.shadowOpacity   = shadowOpacity

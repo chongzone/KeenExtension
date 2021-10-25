@@ -269,8 +269,6 @@ extension CGFloat {
     public static var screenMinWidth: CGFloat { Swift.min(screenWidth, screenHeight) }
     /// 屏幕最大高度
     public static var screenMaxHeight: CGFloat { Swift.max(screenWidth, screenHeight) }
-    /// 键盘高度
-    public static var keyboardHeight: CGFloat { 216 + safeAreaBottomHeight * 2 }
     
     /// 安全区域导航栏高度
     public static var safeAreaNavBarHeight: CGFloat { statusBarHeight + 44.0 }
@@ -280,6 +278,13 @@ extension CGFloat {
     public static var safeAreaBottomHeight: CGFloat { UIDevice.kc.isIPhoneXSeries ? 34.0 : 0.0 }
     /// 安全区域 tabbar 高度
     public static var safeAreaTabbarHeight: CGFloat { UIDevice.kc.isIPhoneXSeries ? 83.0 : 49.0 }
+    
+    /// 键盘高度 默认 X 系列其安全区域底部高度为 34
+    /// - Parameter safeAreaHeight: 键盘安全区域的底部高度
+    /// - Returns: 键盘高度
+    public static func keyboardHeight(add safeAreaHeight: CGFloat = safeAreaBottomHeight) -> CGFloat {
+        return 216 + safeAreaHeight
+    }
     
     /// 适配给定的尺寸 其中设计稿的尺寸默认 750px 宽度
     /// - Parameters:

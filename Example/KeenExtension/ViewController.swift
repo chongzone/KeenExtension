@@ -34,9 +34,10 @@ class ViewController: UIViewController {
             make.height.equalTo(300)
         }
         var items = [UIView]()
-        for _ in 0 ..< 2 {
+        for idx in 0 ..< 2 {
+            let color = idx == 0 ? UIColor.kc.color(hexString: "FF4644") : UIColor.kc.color(hexString: "FF4644")
             let subView = UIView()
-                .backColor(.colorRandom)
+                .backColor(color)
                 .addViewTo(backView)
             items.append(subView)
         }

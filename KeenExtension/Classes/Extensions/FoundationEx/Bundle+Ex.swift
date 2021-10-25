@@ -87,3 +87,21 @@ extension KcPrefixWrapper where Base: Bundle {
         return dic[Base.AppInfoPlist.developmentRegion.rawValue] as? String
     }
 }
+
+//MARK: - 常见功能
+extension KcPrefixWrapper where Base: Bundle {
+    
+    /// 获取当前 bundle 资源
+    /// - Parameters:
+    ///   - aClass: 资源库类
+    ///   - bundle: 当前 bundle 名称
+    ///   - name: 资源名称
+    ///   - ext: 资源后缀  默认 png
+    /// - Returns: 图片
+    public static func imageResouce(of aClass: AnyClass, bundle: String, name: String, ofType ext: String = "png") -> UIImage? {
+        let mainBundle = Bundle(for: aClass)
+        let bundlePath = mainBundle.path(forResource: bundle, ofType: "bundle")!
+        let imgName = String(format: "%@@%.fx.%@", name, UIScreen.main.scale, ext)
+        return UIImage(named: imgName, in: Bundle(path: bundlePath), compatibleWith: nil)
+    }
+}

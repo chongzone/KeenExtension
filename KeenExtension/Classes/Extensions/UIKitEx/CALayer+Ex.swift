@@ -41,14 +41,14 @@ extension CALayer {
 }
 
 //MARK: - CALayer 链式属性函数
-extension KcPrefixWrapper where Base: CALayer {
+extension CALayer {
     
     /// frame
     /// - Parameter frame: frame
     /// - Returns: 自身
     @discardableResult
     public func frame(_ frame: CGRect) -> Self {
-        base.frame = frame
+        self.frame = frame
         return self
     }
     
@@ -57,7 +57,7 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func bounds(_ bounds: CGRect) -> Self {
-        base.bounds = bounds
+        self.bounds = bounds
         return self
     }
     
@@ -66,7 +66,7 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func backColor(_ color: UIColor) -> Self {
-        base.backgroundColor = color.cgColor
+        backgroundColor = color.cgColor
         return self
     }
     
@@ -75,7 +75,7 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func backColor(_ hexString: String) -> Self {
-        base.backgroundColor = UIColor.kc.color(hexString: hexString).cgColor
+        backgroundColor = UIColor.kc.color(hexString: hexString).cgColor
         return self
     }
     
@@ -84,7 +84,7 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func isHidden(_ isHidden: Bool) -> Self {
-        base.isHidden = isHidden
+        self.isHidden = isHidden
         return self
     }
     
@@ -94,8 +94,8 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func corner(_ radius: CGFloat, mask: Bool = true) -> Self {
-        base.cornerRadius = radius
-        base.masksToBounds = mask
+        cornerRadius = radius
+        masksToBounds = mask
         return self
     }
     
@@ -104,7 +104,7 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func borderWidth(_ width: CGFloat) -> Self {
-        base.borderWidth = width
+        borderWidth = width
         return self
     }
     
@@ -113,7 +113,7 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func borderColor(_ color: UIColor) -> Self {
-        base.borderColor = color.cgColor
+        borderColor = color.cgColor
         return self
     }
     
@@ -122,7 +122,7 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func shadowColor(_ color: UIColor) -> Self {
-        base.shadowColor = color.cgColor
+        shadowColor = color.cgColor
         return self
     }
     
@@ -131,7 +131,7 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func shadowOpacity(_ opacity: Float) -> Self {
-        base.shadowOpacity = opacity
+        shadowOpacity = opacity
         return self
     }
     
@@ -140,7 +140,7 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func shadowOffset(_ offset: CGSize) -> Self {
-        base.shadowOffset = offset
+        shadowOffset = offset
         return self
     }
     
@@ -149,7 +149,7 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func shadowRadius(_ radius: CGFloat) -> Self {
-        base.shadowRadius = radius
+        shadowRadius = radius
         return self
     }
     
@@ -158,7 +158,7 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func shadowPath(_ size: CGSize) -> Self {
-        base.shadowPath = UIBezierPath(
+        shadowPath = UIBezierPath(
             rect: CGRect(x: 0, y: 0, width: size.width, height: size.height)
         ).cgPath
         return self
@@ -169,7 +169,7 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func shouldRasterize(_ rasterize: Bool = false) -> Self {
-        base.shouldRasterize = rasterize
+        shouldRasterize = rasterize
         return self
     }
     
@@ -178,8 +178,8 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func rasterizationScale(_ scale: CGFloat) -> Self {
-        base.rasterizationScale = scale
-        base.shouldRasterize = true
+        rasterizationScale = scale
+        shouldRasterize = true
         return self
     }
     
@@ -188,7 +188,7 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func position(_ position: CGPoint = .zero) -> Self {
-        base.position = position
+        self.position = position
         return self
     }
     
@@ -198,7 +198,7 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func zPosition(_ zPosition: CGFloat = 0) -> Self {
-        base.zPosition = zPosition
+        self.zPosition = zPosition
         return self
     }
     
@@ -208,7 +208,7 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func anchorPoint(_ anchorPoint: CGPoint = CGPoint(x: 0.5, y: 0.5)) -> Self {
-        base.anchorPoint = anchorPoint
+        self.anchorPoint = anchorPoint
         return self
     }
     
@@ -217,7 +217,7 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func transform3D(_ form: CATransform3D) -> Self {
-        base.transform = form
+        transform = form
         return self
     }
     
@@ -226,7 +226,7 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func addLayerTo(_ superView: UIView) -> Self {
-        superView.layer.addSublayer(base)
+        superView.layer.addSublayer(self)
         return self
     }
     
@@ -235,13 +235,13 @@ extension KcPrefixWrapper where Base: CALayer {
     /// - Returns: 自身
     @discardableResult
     public func addLayerTo(_ superLayer: CALayer) -> Self {
-        superLayer.addSublayer(base)
+        superLayer.addSublayer(self)
         return self
     } 
 }
 
 //MARK: - CAShapeLayer 链式属性函数
-extension KcPrefixWrapper where Base: CAShapeLayer {
+extension CAShapeLayer {
  
     /// 设置路径 决定了其形状
     /// - Parameters:
@@ -249,7 +249,7 @@ extension KcPrefixWrapper where Base: CAShapeLayer {
     /// - Returns: 自身
     @discardableResult
     public func path(_ path: CGPath) -> Self {
-        base.path = path
+        self.path = path
         return self
     }
     
@@ -259,7 +259,7 @@ extension KcPrefixWrapper where Base: CAShapeLayer {
     /// - Returns: 自身
     @discardableResult
     public func fillColor(_ color: UIColor) -> Self {
-        base.fillColor = color.cgColor
+        fillColor = color.cgColor
         return self
     }
     
@@ -269,7 +269,7 @@ extension KcPrefixWrapper where Base: CAShapeLayer {
     /// - Returns: 自身
     @discardableResult
     public func fillRule(_ rule: CAShapeLayerFillRule) -> Self {
-        base.fillRule = rule
+        fillRule = rule
         return self
     }
     
@@ -279,7 +279,7 @@ extension KcPrefixWrapper where Base: CAShapeLayer {
     /// - Returns: 自身
     @discardableResult
     public func strokeColor(_ color: UIColor) -> Self {
-        base.strokeColor = color.cgColor
+        strokeColor = color.cgColor
         return self
     }
     
@@ -289,7 +289,7 @@ extension KcPrefixWrapper where Base: CAShapeLayer {
     /// - Returns: 自身
     @discardableResult
     public func strokeStart(_ start: CGFloat) -> Self {
-        base.strokeStart = start
+        strokeStart = start
         return self
     }
     
@@ -299,7 +299,7 @@ extension KcPrefixWrapper where Base: CAShapeLayer {
     /// - Returns: 自身
     @discardableResult
     public func strokeEnd(_ end: CGFloat) -> Self {
-        base.strokeEnd = end
+        strokeEnd = end
         return self
     }
     
@@ -309,7 +309,7 @@ extension KcPrefixWrapper where Base: CAShapeLayer {
     /// - Returns: 自身
     @discardableResult
     public func lineWidth(_ width: CGFloat) -> Self {
-        base.lineWidth = width
+        lineWidth = width
         return self
     }
     
@@ -319,7 +319,7 @@ extension KcPrefixWrapper where Base: CAShapeLayer {
     /// - Returns: 自身
     @discardableResult
     public func lineCap(_ cap: CAShapeLayerLineCap) -> Self {
-        base.lineCap = cap
+        lineCap = cap
         return self
     }
     
@@ -329,7 +329,7 @@ extension KcPrefixWrapper where Base: CAShapeLayer {
     /// - Returns: 自身
     @discardableResult
     public func lineJoin(_ join: CAShapeLayerLineJoin) -> Self {
-        base.lineJoin = join
+        lineJoin = join
         return self
     }
     
@@ -339,7 +339,7 @@ extension KcPrefixWrapper where Base: CAShapeLayer {
     /// - Returns: 自身
     @discardableResult
     public func lineDashPhase(_ start: CGFloat) -> Self {
-        base.lineDashPhase = start
+        lineDashPhase = start
         return self
     }
     
@@ -349,13 +349,13 @@ extension KcPrefixWrapper where Base: CAShapeLayer {
     /// - Returns: 自身
     @discardableResult
     public func lineDashPattern(_ dashs: [NSNumber]) -> Self {
-        base.lineDashPattern = dashs
+        lineDashPattern = dashs
         return self
     }
 }
 
 //MARK: - CATextLayer 链式属性函数
-extension KcPrefixWrapper where Base: CATextLayer {
+extension CATextLayer {
     
     /// 内容
     /// - Parameters:
@@ -363,7 +363,7 @@ extension KcPrefixWrapper where Base: CATextLayer {
     /// - Returns: 自身
     @discardableResult
     public func text(_ text: String) -> Self {
-        base.string = text
+        self.string = text
         return self
     }
     
@@ -372,7 +372,7 @@ extension KcPrefixWrapper where Base: CATextLayer {
     /// - Returns: 自身
     @discardableResult
     public func attributedText(_ attributedText: NSAttributedString) -> Self {
-        base.string = attributedText
+        string = attributedText
         return self
     }
     
@@ -383,9 +383,9 @@ extension KcPrefixWrapper where Base: CATextLayer {
     /// - Returns: 自身
     @discardableResult
     public func font(_ fontSize: CGFloat, _ style: UIFont.FontStyle = .normal) -> Self {
-        base.fontSize = fontSize
-        base.font = UIFont.fontSizeAdapter(fontSize, style)
-        base.contentsScale = UIScreen.main.scale
+        self.fontSize = fontSize
+        font = UIFont.fontSizeAdapter(fontSize, style)
+        contentsScale = UIScreen.main.scale
         return self
     }
     
@@ -394,7 +394,7 @@ extension KcPrefixWrapper where Base: CATextLayer {
     /// - Returns: 自身
     @discardableResult
     public func color(_ color: UIColor) -> Self {
-        base.foregroundColor = color.cgColor
+        foregroundColor = color.cgColor
         return self
     }
     
@@ -403,7 +403,7 @@ extension KcPrefixWrapper where Base: CATextLayer {
     /// - Returns: 自身
     @discardableResult
     public func color(_ hexString: String) -> Self {
-        base.foregroundColor = UIColor.kc.color(hexString: hexString).cgColor
+        foregroundColor = UIColor.kc.color(hexString: hexString).cgColor
         return self
     }
     
@@ -412,7 +412,7 @@ extension KcPrefixWrapper where Base: CATextLayer {
     /// - Returns: 自身
     @discardableResult
     public func truncationMode(_ mode: CATextLayerTruncationMode) -> Self {
-        base.truncationMode = mode
+        truncationMode = mode
         return self
     }
     
@@ -423,17 +423,17 @@ extension KcPrefixWrapper where Base: CATextLayer {
     public func alignment(_ alignment: NSTextAlignment = .left) -> Self {
         switch alignment {
         case .left:
-            base.alignmentMode = .left
+            alignmentMode = .left
         case .right:
-            base.alignmentMode = .right
+            alignmentMode = .right
         case .center:
-            base.alignmentMode = .center
+            alignmentMode = .center
         case .natural:
-            base.alignmentMode = .natural
+            alignmentMode = .natural
         case .justified:
-            base.alignmentMode = .justified
+            alignmentMode = .justified
         default:
-            base.alignmentMode = .left
+            alignmentMode = .left
         }
         return self
     }
@@ -443,7 +443,7 @@ extension KcPrefixWrapper where Base: CATextLayer {
     /// - Returns: 自身
     @discardableResult
     public func isWrapped(_ isWrapped: Bool = false) -> Self {
-        base.isWrapped = isWrapped
+        self.isWrapped = isWrapped
         return self
     }
 }
